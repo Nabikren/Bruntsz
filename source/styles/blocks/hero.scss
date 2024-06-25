@@ -1,0 +1,57 @@
+.hero {
+  text-align: center;
+
+  &__intro {
+    max-width: 916px;
+    max-height: 374px;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    right: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 65%;
+    color: $white;
+
+    @media screen and (min-width: $tablet-width) {
+      font-size: 80px;
+      bottom: -55px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 10px;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: grid;
+
+    @media screen and (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}

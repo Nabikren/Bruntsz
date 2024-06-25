@@ -5,4 +5,12 @@
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
 
+/* LAYOUT */
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
 /* BLOCKS */
+@import "./blocks/logo.scss";
+@import "./blocks/contacts-item.scss";
+@import "./blocks/header-info.scss";
+@import "./blocks/hero.scss";

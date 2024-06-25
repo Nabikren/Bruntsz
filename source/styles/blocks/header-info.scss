@@ -1,0 +1,14 @@
+.header-info {
+  &__contacts-list {
+    display: grid;
+    gap: 10px;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &__contacts-item {
+    display: grid;
+  }
+}

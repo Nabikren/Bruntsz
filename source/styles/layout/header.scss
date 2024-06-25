@@ -1,0 +1,27 @@
+.header {
+  min-height: 110px;
+
+  &__wrapper {
+    padding-top: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+}
