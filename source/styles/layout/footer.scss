@@ -9,6 +9,10 @@
     font-size: 12px;
     text-align: center;
     margin: 0;
+
+    @media screen and (min-width: $tablet-width) {
+      font-size: 15px;
+    }
   }
 
   &__social-list {

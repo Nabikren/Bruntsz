@@ -9,5 +9,9 @@ margin-left: auto;
       display: flex;
       gap: 10px;
     }
+
+    @media screen and (min-width: $desktop-width) {
+      gap: 25px
+    }
   }
 }
