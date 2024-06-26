@@ -1,0 +1,14 @@
+.contacts-item {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    &:nth-child(1) {
+      text-align: end;
+    }
+
+    &:nth-child(2) {
+      text-align: start;
+    }
+  }
+}

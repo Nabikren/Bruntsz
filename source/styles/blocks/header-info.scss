@@ -1,14 +1,13 @@
 .header-info {
+margin-left: auto;
+
   &__contacts-list {
-    display: grid;
-    gap: 10px;
+    display: none;
 
-    @media screen and (min-width: $tablet-width) {
+
+    @media screen and (min-width: 870px) {
       display: flex;
+      gap: 10px;
     }
-  }
-
-  &__contacts-item {
-    display: grid;
   }
 }

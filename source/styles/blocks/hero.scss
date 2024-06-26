@@ -1,6 +1,22 @@
 .hero {
   text-align: center;
 
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-width) {
+      align-items: end;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      align-items: end;
+      padding-bottom: 200px;
+    }
+  }
+
   &__intro {
     max-width: 916px;
     max-height: 374px;
@@ -9,6 +25,16 @@
     img {
       max-width: 100%;
       height: auto;
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0;
+      max-width: 630px;
+      width: 100%;
     }
   }
 
@@ -40,6 +66,10 @@
 
     @media screen and (min-width: $tablet-width) {
       text-align: left;
+
+      &:nth-child(2) {
+        text-align: end;
+      }
     }
   }
 
@@ -47,11 +77,5 @@
     @media screen and (min-width: $tablet-width) {
       text-align: left;
     }
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
   }
 }
