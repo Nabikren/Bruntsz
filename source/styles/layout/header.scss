@@ -1,0 +1,35 @@
+.header {
+  min-height: 110px;
+
+  &__wrapper {
+    padding-top: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      padding-top: 20px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      gap: 10px;
+      padding-top: 10px;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      gap: 30px;
+    }
+  }
+}

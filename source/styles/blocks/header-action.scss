@@ -1,0 +1,69 @@
+.header-action {
+  width: 100%;
+  margin-top: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  &__info {
+    margin: 0;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 90px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__call {
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 10px 30px 10px 10px;
+    color: $white;
+    background-color: $blue_58BCFF;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url('./../../images/icons/phone_icon.svg');
+
+      @media screen and (min-width: $tablet-width) {
+        top: 8px;
+        right: 30px;
+        padding: 10px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: 200px;
+      margin-top: 0;
+      margin-inline: auto;
+    }
+  }
+
+  &__mail {
+    margin-top: 5px;
+  }
+}
