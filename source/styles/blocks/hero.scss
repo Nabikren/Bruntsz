@@ -1,5 +1,7 @@
 .hero {
   text-align: center;
+  display: grid;
+  align-content: center;
 
   &__content {
     margin-top: 50px;
