@@ -20,10 +20,6 @@ img {
   &:hover {
     opacity: 0.5;
   }
-
-  &:focus {
-    border: 1px solid $black;
-  }
 }
 
 .page {

@@ -1,0 +1,26 @@
+.social-list {
+  &__icon {
+    height: 35px;
+
+    @media screen and (min-width: $tablet-width) {
+      height: 45px;
+    }
+  }
+
+  &__link {
+    &--telegram {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $blue-58BCFF;
+
+      @media screen and (min-width: $tablet-width) {
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}
