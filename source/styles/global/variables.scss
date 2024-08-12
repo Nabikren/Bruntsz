@@ -3,15 +3,26 @@ $primary-font:"Montserrat",
 "Arial",
 sans-serif;
 
+$secondary-font:"maki",
+"Arial",
+sans-serif;
+
 /* media-разрешения */
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1330px;
+$desktop-width11: 1330px;
 
-$black: #000000;
+$black: #000000; // Цвет основной цвет текста
 $white: #ffffff;
-$blue-58BCFF: #58BCFF;
+$transparent: transparent;
 
-$grey-B9C8D2: #B9C8D2;
-$grey-2E2E2E: #2E2E2E;
-$grey-D9D9D9: #D9D9D9;
+$blue-18A0FB: #18A0FB; // Основной цвет
+$blue-088DE6: #088DE6; // Основной цвет темнее для градиента на бэкграунде
+
+
+$grey-A0A3BD: #A0A3BD; // цвет текста время работы в шапке
+$grey-E5E5E5: #E5E5E5; // цвет текста на схемах
+$grey-4C4C4C: #4C4C4C; // дополнительный цвет текста
+$grey-474747: #474747;
+$grey-201F1F: #201F1F;

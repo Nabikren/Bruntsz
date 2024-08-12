@@ -1,0 +1,69 @@
+.base-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.secondary-base-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.third-base-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.decor-text {
+  font-family: $secondary-font;
+  color: $white;
+}
+
+.primary-title {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+.secondary-title {
+  font-size: 26px;
+  line-height: 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.third-title {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -15,6 +15,7 @@
     "not < 0.2%"
   ],
   "scripts": {
+    "dev": "gulp runDev",
     "start": "gulp runDev",
     "build": "gulp buildProd",
     "preview": "npm run build && browser-sync start -s build/ --cors --no-notify --no-ui",
