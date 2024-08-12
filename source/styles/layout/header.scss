@@ -4,16 +4,19 @@
   &__wrapper {
     padding-top: 10px;
     display: grid;
-    justify-items: center;
+    justify-items: self-end;
+
     gap: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
 
     @media screen and (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
       font-size: 16px;
       padding-top: 20px;
+      justify-items: center;
     }
   }
 

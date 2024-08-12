@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    color: $white;
+
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      gap: 20px;
+      color: $black;
+    }
+  }
+
+  .link {
+    color: $white;
+
+    @media screen and (min-width: $desktop-width) {
+      color: $black;
+    }
+  }
+
+  .link.current {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $white;
+
+    @media screen and (min-width: $desktop-width) {
+      border-bottom: 1px solid $blue-18A0FB;
+    }
+  }
+}
