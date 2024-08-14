@@ -1,0 +1,19 @@
+.button {
+  background-color: $transparent;
+  border: 1px solid $transparent;
+  outline: none;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.primary-button {
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 50px;
+  text-align: center;
+}

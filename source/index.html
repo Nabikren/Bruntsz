@@ -42,66 +42,49 @@
     <body class="page__body">
         <header class="header">
             <div class="header__wrapper container">
-                <div class="header__logo logo">
-                    <a class="logo__link" href="index.html">
-                        <svg width="120" height="80">
-                            <use href="./images/icons/stack.svg#logo"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="header__info header-info">
-                    <ul class="header-info__contacts-list list-style-none">
-                        <li class="header-info__contacts-item contacts-item">
-                            <a class="contacts-item__link link" href="tel:+79516484842" target="_blank">+7 (951) 648 48 42</a>
-                            <span class="contacts-item__text">Олег Владимирович Рожков</span>
-                        </li>
-                        <li class="header-info__contacts-item contacts-item">
-                            <a class="contacts-item__link link" href="tel:+79219694667" target="_blank">+7 (921) 969 46 67</a>
-                            <span class="contacts-item__text">Александр Юрьевич Порошин</span>
-                        </li>
-                    </ul>
-                    <div class="header-info__header-action header-action">
-                        <p class="header-action__info secondary-font">Пн-Пт 9:00-18:00</p>
-                        <div class="header-action__wrapper">
-                            <a class="header-action__call link" href="tel:+79516484842">
-                                Позвонить
-                            </a>
-                            <a class="header-action__mail link" href="mailto:brunt-sz@mail.ru">
-                                brunt-sz@mail.ru
-                            </a>
+                <a class="logo__link" href="index.html">
+                    <svg width="120" height="80">
+                        <use href="./images/icons/stack.svg#logo"></use>
+                    </svg>
+                </a>
+                <button type="button" class="button open-menu" id="menu-button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <div class="menu" id="menu">
+                    <button type="button" class="button close-menu" id="close-button">
+                        <span class="visually-hidden">Закрыть меню</span>
+                    </button>
+                    <nav class="nav">
+                        <ul class="nav__list list-style-none">
+                            <li>
+                                <a class="link current" href="index.html" aria-current="index">Главная</a>
+                            </li>
+                            <li>
+                                <a class="link" href="catalog-amout.html">Навесное оборудование</a>
+                            </li>
+                            <li>
+                                <a class="link" href="catalog-robots.html">Демонтажные роботы</a>
+                            </li>
+                            <li>
+                                <a class="link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__contacts">
+                        <div class="call-to-action">
+                            <p class="date-time">
+                                <span>ПН-ПТ</span>
+                                <span>9:00-18:00</span>
+                            </p>
+                            <a class="button primary-button" href="tel:+79516484842">Позвонить</a>
                         </div>
+                        <a class="link menu__email" href="mailto:brunt-sz@mail.ru">brunt-sz@mail.ru</a>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main container">
-            <section class="hero">
-                <h1 class="visually-hidden">Brunt - демонтажные роботы</h1>
-                <div class="hero__content">
-                    <div class="hero__intro">
-                        <img
-                            src="./images/bg_img_hero_v2.svg"
-                            alt=""
-                            width="916px"
-                            height="374px"
-                        >
-                        <h2 class="visually-hidden"> Страница в разработке</h2>
-                    </div>
-                    <div class="hero__info">
-                        <p class="hero__text">Тем не менее вы можете обратиться к нам по телефону:</p>
-                        <ul class="hero__list list-style-none">
-                            <li class="hero__item">
-                                <a class="hero__link link" href="tel:+79516484842" target="_blank">+7 (951) 648 48 42</a>
-                                <span class="hero__text">Олег Владимирович Рожков</span>
-                            </li>
-                            <li class="hero__item">
-                                <a class="hero__link link" href="tel:+79219694667" target="_blank">+7 (921) 969 46 67</a>
-                                <span class="hero__text">Александр Юрьевич Порошин</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            <section class="intro"></section>
         </main>
         <footer class="footer">
             <div class="footer__wrapper container">
@@ -130,5 +113,6 @@
                 <p class="footer__copyright basic-font">© Brunt, Inc. 2024. We will break everything for users!</p>
             </div>
         </footer>
+        <div id="overlay"></div>
     </body>
 </html>

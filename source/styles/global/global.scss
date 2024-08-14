@@ -13,7 +13,7 @@ img {
 
 .link {
   text-decoration: none;
-  color: currentColor;
+  color: $black;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 
@@ -46,7 +46,6 @@ img {
   }
 
   .main {
-    display: grid;
     flex-grow: 1;
   }
 }

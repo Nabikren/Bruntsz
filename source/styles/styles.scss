@@ -5,6 +5,7 @@
 @import "./global/global.scss";
 @import "./global/text.scss";
 @import "./global/visually-hidden.scss";
+@import "./global/buttons.scss";
 
 /* LAYOUT */
 @import "./layout/header.scss";
@@ -17,3 +18,5 @@
 @import "./blocks/hero.scss";
 @import "./blocks/header-action.scss";
 @import "./blocks/social-list.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/menu.scss";
