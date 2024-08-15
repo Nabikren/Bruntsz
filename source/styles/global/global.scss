@@ -69,3 +69,25 @@ img {
   padding: 0;
   list-style-type: none;
 }
+
+.base-link {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  border: 1px solid $transparent;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
