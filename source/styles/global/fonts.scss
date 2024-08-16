@@ -1,5 +1,9 @@
 /* здесь подключите шрифты*/
-@include font-face("Montserrat", 500, normal, url("../../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"));
-@include font-face("Montserrat", 900, normal, url("../../fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"));
+@include font-face("Montserrat", 400, normal, url("../../fonts/Montserrat/Montserrat_regular.woff") format("woff"));
+@include font-face("Montserrat", 400, normal, url("../../fonts/Montserrat/Montserrat_regular.woff2") format("woff"));
+@include font-face("Montserrat", 600, normal, url("../../fonts/Montserrat/Montserrat_semibold.woff") format("woff2"));
+@include font-face("Montserrat", 600, normal, url("../../fonts/Montserrat/Montserrat_semibold.woff2") format("woff2"));
+@include font-face("Montserrat", 700, normal, url("../../fonts/Montserrat/Montserrat_bold.woff") format("woff"));
+@include font-face("Montserrat", 700, normal, url("../../fonts/Montserrat/Montserrat_bold.woff2") format("woff2"));
 @include font-face("maki", 500, normal, url("../../fonts/Maki/maki.woff2") format("woff2"));
 @include font-face("maki", 500, normal, url("../../fonts/Maki/maki.woff") format("woff"));
