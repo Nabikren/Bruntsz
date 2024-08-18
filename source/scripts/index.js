@@ -3,6 +3,57 @@ import { toggleMenu } from './modules/burger.js';
 
 toggleMenu();
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   const faqItems = document.querySelectorAll('.faq__item');
+
+//   faqItems.forEach(item => {
+//     const questionWrapper = item.querySelector('.faq__question-wrapper');
+//     const button = item.querySelector('.faq__button');
+//     const answer = item.querySelector('.faq__answer-wrapper');
+
+//     button.addEventListener('click', function() {
+//       const isOpened = button.classList.contains('faq__button--opened');
+
+//       // Закрыть все ответы
+//       faqItems.forEach(i => {
+//         i.querySelector('.faq__button').classList.remove('faq__button--opened');
+//         i.querySelector('.faq__answer-wrapper').style.display = 'none';
+//       });
+
+//       // Открыть текущий ответ, если он не был открыт ранее
+//       if (!isOpened) {
+//         button.classList.add('faq__button--opened');
+//         answer.style.display = 'block';
+//       }
+//     });
+//   });
+// });
+
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach(item => {
+    const questionWrapper = item.querySelector('.faq__question-wrapper');
+    const answerWrapper = item.querySelector('.faq__answer-wrapper');
+    const button = item.querySelector('.faq__button');
+
+    // Функция для переключения состояния
+    const toggleFaqItem = () => {
+        const isOpen = answerWrapper.style.display === 'block';
+        if (isOpen) {
+            answerWrapper.style.display = 'none';
+            button.classList.remove('faq__button--opened');
+        } else {
+            answerWrapper.style.display = 'block';
+            button.classList.add('faq__button--opened');
+        }
+    };
+
+    // Добавляем обработчик на обертку вопроса
+    questionWrapper.addEventListener('click', toggleFaqItem);
+    // И на кнопку, чтобы они оба работали одинаково
+    button.addEventListener('click', toggleFaqItem);
+});
+
 
 
 
