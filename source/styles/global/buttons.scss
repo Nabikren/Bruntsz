@@ -16,4 +16,57 @@
   padding: 10px;
   min-height: 50px;
   text-align: center;
+  background-color: $blue-18A0FB;
+  color: $white;
+  border-radius: 5px;
+  border: 1px solid $transparent;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    color: $blue-18A0FB;
+    border: 1px solid $blue-18A0FB;
+    background-color: $white;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    border: 1px solid $blue-18A0FB;
+    color: $blue-18A0FB;
+    background-color: $white;
+  }
+}
+
+.secondary-button {
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 50px;
+  text-align: center;
+  background-color: $white;
+  color: $blue-18A0FB;
+  border-radius: 5px;
+  border: 1px solid $transparent;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white;
+    background-color: $blue-18A0FB;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    color: $blue-18A0FB;
+    background-color: $white;
+    border: 1px solid $blue-18A0FB;
+  }
 }
