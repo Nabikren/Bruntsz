@@ -1,0 +1,40 @@
+.facts {
+  &__wrapper {
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  &__main-fact {
+    border: 1px solid $blue-18A0FB;
+    border-radius: 15px;
+  }
+
+  &__main-fact-title {
+  }
+
+  &__main-fact-text {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  &__item {
+    border: 1px solid $blue-18A0FB;
+    border-radius: 15px;
+    padding-top: 30%;
+  }
+}
