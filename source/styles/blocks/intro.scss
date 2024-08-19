@@ -1,7 +1,12 @@
 .intro {
   min-height: 600px;
 
-  &__bg {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &__bg,
+  &__ig {
     position: relative;
     min-height: inherit;
 
@@ -16,6 +21,15 @@
       z-index: 1;
       opacity: 0.9;
       clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
+
+      @media screen and (min-width: $tablet-width) {
+
+        width: 100%;
+        clip-path: none;
+        left: auto;
+        right: 0;
+
+      }
     }
 
     &::after {
@@ -35,6 +49,39 @@
       width: 100%;
       height: 100%;
       clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
+
+      @media screen and (min-width: $tablet-width) {
+
+        width: 100%;
+        clip-path: none;
+        right: 0;
+        left: auto;
+
+      }
+    }
+  }
+
+  &__bg {
+    @media screen and (min-width: $tablet-width) {
+
+      width: 60%;
+
+    }
+  }
+
+  &__ig {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+      display: block;
+      width: 60%;
+
+      &::after,
+      &::before {
+        left: 0;
+        right: auto;
+        width: inherit;
+      }
     }
   }
 
@@ -42,11 +89,27 @@
     z-index: 1;
     position: relative;
     padding: 60px 10px 0 10px;
-    margin: 0 auto;
     align-content: space-between;
     display: grid;
     justify-content: center;
     min-height: inherit;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 360px;
+      min-height: min-content;
+      top: auto;
+      bottom: -5%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 442px;
+      bottom: -15%;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      max-width: 642px;
+      bottom: -30%;
+    }
   }
 
   &__image {
@@ -57,6 +120,12 @@
     transform: translateX(-50%);
     width: 350px;
 
+    @media screen and (min-width: $tablet-width) {
+      top: 9px;
+      left: 4%;
+      width: 100%;
+    }
+
     &-scheme {
       position: absolute;
       z-index: 1;
@@ -65,24 +134,65 @@
       left: 50%;
       transform: translateX(-50%);
       clip-path: polygon(0 0, 100% 0, 26% 100%, 0% 100%);
-    }
-  }
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: calc(100% - 50px);
-    min-height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 50%;
-    transform: translateX(-50%);
+      @media screen and (min-width: $tablet-width) {
+        display: none;
+      }
+
+      &-ds {
+
+        display: none;
+
+        @media screen and (min-width: $tablet-width) {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          width: inherit;
+          left: 0;
+          top: 6%;
+
+          &--second {
+            top: 0;
+            left: auto;
+            width: initial;
+          }
+        }
+
+      }
+    }
+
+
   }
 
   .secondary-title {
     padding: 0 7px;
+    font-weight: 500;
+  }
+
+  .base-text {
+    @media screen and (min-width: $tablet-width) {
+      color: $white;
+    }
+  }
+
+  .button {
+    @media screen and (min-width: $tablet-width) {
+
+      background-color: $white;
+      color: $blue-18A0FB;
+      display: inline-flex;
+
+      &:hover {
+        color: $white;
+        background-color: $blue-18A0FB;
+        border: 1px solid $white;
+      }
+
+      &:focus {
+        color: $white;
+        background-color: $blue-18A0FB;
+        border: 1px solid $white;
+      }
+    }
   }
 }
