@@ -15,7 +15,9 @@
     margin-top: 40px;
 
     @media screen and (min-width: $tablet-width) {
-      display: flex;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
   }
@@ -32,6 +34,7 @@
 
     @media screen and (min-width: $tablet-width) {
       max-width: 600px;
+      margin: 0;
     }
   }
 
@@ -40,6 +43,8 @@
     margin: 0;
     top: 20px;
     left: 20px;
+    font-size: 26px;
+    line-height: 36px;
   }
 
   &__main-fact-text {
