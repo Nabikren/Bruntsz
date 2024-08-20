@@ -91,3 +91,12 @@ img {
     opacity: 0.8;
   }
 }
+
+.section {
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+}

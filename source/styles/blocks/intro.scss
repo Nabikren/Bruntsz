@@ -1,8 +1,59 @@
 .intro {
   min-height: 600px;
+  overflow: hidden;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $desktop-width) {
     display: flex;
+  }
+
+  &__wrapper {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    position: relative;
+
+    &::before,
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      display: block;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 20px);
+      border: 2px solid $white;
+      border-top: none;
+      z-index: 1;
+
+      @media screen and (min-width: $desktop-width) {
+        border: 4px solid $white;
+        width: calc(100% - 40px);
+        top: 0;
+        min-height: 550px;
+
+        overflow: hidden;
+      }
+    }
+
+    &::before {
+      transform: translate(-50%, -5px);
+      z-index: 2;
+
+      @media screen and (min-width: $desktop-width) {
+        transform: translate(-50%, 25px);
+      }
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+      width: calc(100% - 10px);
+
+      @media screen and (min-width: $desktop-width) {
+        transform: translate(-50%, 10px);
+        min-height: 580px;
+      }
+    }
   }
 
   &__bg,
@@ -22,7 +73,7 @@
       opacity: 0.9;
       clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
 
-      @media screen and (min-width: $tablet-width) {
+      @media screen and (min-width: $desktop-width) {
 
         width: 100%;
         clip-path: none;
@@ -50,7 +101,7 @@
       height: 100%;
       clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
 
-      @media screen and (min-width: $tablet-width) {
+      @media screen and (min-width: $desktop-width) {
 
         width: 100%;
         clip-path: none;
@@ -62,17 +113,23 @@
   }
 
   &__bg {
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
 
+    @media screen and (min-width: $desktop-width) {
       width: 60%;
+    }
 
+    @media screen and (min-width: $fullHD-width) {
+      margin-left: -50px;
     }
   }
 
   &__ig {
     display: none;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $desktop-width) {
       display: block;
       width: 60%;
 
@@ -83,9 +140,19 @@
         width: inherit;
       }
     }
+
+    @media screen and (min-width: $fullHD-width) {
+      width: 63%;
+    }
+
+    &-image {
+      position: relative;
+      width: inherit;
+      height: 100%;
+    }
   }
 
-  &__wrapper {
+  &__inner {
     z-index: 1;
     position: relative;
     padding: 60px 10px 0 10px;
@@ -94,16 +161,19 @@
     justify-content: center;
     min-height: inherit;
 
-    @media screen and (min-width: $tablet-width) {
-      max-width: 360px;
-      min-height: min-content;
-      top: auto;
-      bottom: -5%;
+    @media screen and (min-width: $desktop) {
+      padding: 0px 10px 0 10px;
+      max-width: 540px;
+      margin: auto;
+      bottom: 0;
+
     }
 
-    @media screen and (min-width: $desktop) {
-      max-width: 442px;
-      bottom: -15%;
+    @media screen and (min-width: $desktop-width) {
+      max-width: 480px;
+      min-height: 100%;
+      align-content: flex-end;
+      padding-bottom: 40px;
     }
 
     @media screen and (min-width: $fullHD-width) {
@@ -120,10 +190,21 @@
     transform: translateX(-50%);
     width: 350px;
 
-    @media screen and (min-width: $tablet-width) {
-      top: 9px;
-      left: 4%;
+    @media screen and (min-width: $desktop-width) {
+
+      top: 29px;
+      left: -17%;
       width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      top: 25px;
+      left: -15%;
+      width: 106%;
+      height: 548px;
+      object-fit: cover;
     }
 
     &-scheme {
@@ -135,7 +216,7 @@
       transform: translateX(-50%);
       clip-path: polygon(0 0, 100% 0, 26% 100%, 0% 100%);
 
-      @media screen and (min-width: $tablet-width) {
+      @media screen and (min-width: $desktop-width) {
         display: none;
       }
 
@@ -143,21 +224,36 @@
 
         display: none;
 
-        @media screen and (min-width: $tablet-width) {
+        @media screen and (min-width: $desktop-width) {
           display: block;
           position: absolute;
           z-index: 1;
-          width: inherit;
-          left: 0;
-          top: 6%;
+          width: 283px;
+          right: 0;
+          top: 12%;
 
           &--second {
             top: 0;
-            left: auto;
-            width: initial;
+            left: 0;
+            right: auto;
+            height: 215px;
+            width: 345px;
           }
         }
 
+        @media screen and (min-width: $fullHD-width) {
+          width: 345px;
+          right: 0;
+          top: 12%;
+
+          &--second {
+            top: 17px;
+            left: 0;
+            right: auto;
+            height: 214px;
+            width: 411px;
+          }
+        }
       }
     }
 
@@ -170,13 +266,13 @@
   }
 
   .base-text {
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $desktop-width) {
       color: $white;
     }
   }
 
   .button {
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $desktop-width) {
 
       background-color: $white;
       color: $blue-18A0FB;
