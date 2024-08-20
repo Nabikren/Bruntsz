@@ -137,7 +137,7 @@
                         </div>
                     </div>
                     <div class="models-main__image-wrapper">
-                        <img class="models-main__image-mobile" src="./images/robot_main_mobil@2x.webp" alt="Модели роботов для демонтажа">
+                        <img class="models-main__image-mobile" src="./images/robot_main_mobile@2x.webp" alt="Модели роботов для демонтажа">
                         <img class="models-main__image-desktop" src="./images/robot_main_desktop@2x.webp" alt="Модели роботов для демонтажа">
                     </div>
                 </div>
@@ -149,6 +149,23 @@
                         <div class="facts__main-fact">
                             <h3 class="facts__main-fact-title">Экономия на зарплате</h3>
                             <span class="facts__main-fact-text">от 40%</span>
+
+                            <svg class="facts__main-fact-graph" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <!-- Полигон с градиентом -->
+                                <defs>
+                                    <linearGradient id="graphGradient" x1="0" y1="0" x2="0.5" y2="1">
+                                        <stop offset="0%" stop-color="#088DE6"></stop>
+                                        <stop offset="100%" stop-color="#18A0FB"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="0,100 25,82 42,58 70,52 100,40 100,100" fill="url(#graphGradient)"></polygon>
+
+                                <!-- Точки на графике -->
+                                <circle cx="25" cy="82" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
+                                <circle cx="42" cy="58" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
+                                <circle cx="70" cy="52" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
+                                <circle cx="98" cy="41" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
+                            </svg>
                         </div>
                         <ul class="facts__list list-style-none">
                             <li class="facts__item">
