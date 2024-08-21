@@ -70,3 +70,29 @@
     border: 1px solid $blue-18A0FB;
   }
 }
+
+.third-button {
+  min-width: 338px;
+  min-height: 61px;
+  padding: 20px;
+  color: $blue-18A0FB;
+  background-color: $white;
+  border-radius: 15px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white;
+    border: 1px solid $white;
+    background-color: $blue-18A0FB;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    border: 1px solid $blue-18A0FB;
+    color: $blue-18A0FB;
+    background-color: $white;
+  }
+}

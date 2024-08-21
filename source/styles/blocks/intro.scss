@@ -200,17 +200,17 @@
       object-fit: cover;
     }
 
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: $desktop-1) {
       left: -20%;
     }
 
-    @media screen and (min-width: 1630px) {
+    @media screen and (min-width: $desktop-2) {
       left: -20%;
       top: 28px;
       height: 457px;
     }
 
-    @media screen and (min-width: 1750px) {
+    @media screen and (min-width: $desktop-3) {
       left: -19%;
       top: 27px;
       height: 518px;
@@ -258,7 +258,7 @@
           }
         }
 
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-width: $desktop-1) {
 
           &--second {
             top: 40px;
@@ -267,7 +267,7 @@
           }
         }
 
-        @media screen and (min-width: 1630px) {
+        @media screen and (min-width: $desktop-2) {
 
           &--second {
             top: 48px;
@@ -276,7 +276,7 @@
           }
         }
 
-        @media screen and (min-width: 1750px) {
+        @media screen and (min-width: $desktop-3) {
           width: 328px;
 
           &--second {
@@ -312,13 +312,13 @@
         bottom: 50px;
         height: 400px;
 
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-width: $desktop-1) {
           left: 131px;
           bottom: 82px;
           height: 464px;
         }
 
-        @media screen and (min-width: 1750px) {
+        @media screen and (min-width: $desktop-3) {
           left: 190px;
           bottom: 40px;
           height: 475px;
