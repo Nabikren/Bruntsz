@@ -18,6 +18,7 @@
   &__icon-wrapper {
     display: flex;
     column-gap: 20px;
+    align-items: center;
   }
 
   &__icon {
@@ -28,6 +29,7 @@
     @media screen and (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
+      margin: 0;
     }
   }
 
