@@ -68,7 +68,7 @@
         <script src="scripts/index.js" defer></script>
     </head>
     <body class="page__body">
-        <header class="header">
+        <header class="header section">
             <div class="header__wrapper container">
                 <a class="logo" href="index.html">
                     <svg width="120" height="80">
@@ -111,9 +111,32 @@
                 </div>
             </div>
         </header>
-        <main class="main container">
-            <section class="intro"></section>
-            <section class="models-main">
+        <main class="main">
+            <section class="section intro">
+                <div class="intro__wrapper">
+                    <div class="intro__ig">
+                        <div class="intro__ig-image">
+                            <img class="intro__image-scheme-coordinate" src="./images/coordinat.svg" alt="навесное оборуднование для демонтажных роботов. Поставка напрямую из Китая.">
+                            <img class="intro__image-scheme-ds" src="./images/robots_intro_scheme-ds-2.png" alt="Демонтажные роботы из Китая. Компания brunt. ">
+                        </div>
+                    </div>
+                    <div class="intro__bg">
+                        <div class="intro__inner">
+                            <h2 class="secondary-title decor-text">Инновационные Роботы для Демонтажа от BRUNT</h2>
+                            <div class="intro__info">
+                                <p class="base-text">Brunt предлагает передовые роботизированные решения для эффективного и безопасного демонтажа. Наши роботы обеспечивают максимальную производительность, сокращая расходы и улучшая безопасность на рабочих местах.</p>
+                                <a class="button primary-button" href="#form">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <img class="intro__image-scheme" src="./images/robots_intro_scheme.png" alt="Демонтажные роботы из Китая. Компания brunt. ">
+                        <img class="intro__image-scheme-ds intro__image-scheme-ds--second" src="./images/robots_intro_scheme-ds-1.png" alt="Демонтажные роботы из Китая. Компания brunt. ">
+                        <img class="intro__image" src="./images/robot_hero_desktop@1x.webp" alt="Демонтажные роботы из Китая. Компания brunt. ">
+                    </div>
+                </div>
+            </section>
+            <section class="section models-main container">
                 <div class="models-main__wrapper">
                     <div class="models-main__description">
                         <h2 class="models-main__title">Наши Модели Роботов для Демонтажа</h2>
@@ -121,16 +144,28 @@
                             <h3 class="models-main__list-title">Откройте для себя широкий ассортимент демонтажных роботов от Brunt:</h3>
                             <ul class="models-main__list">
                                 <li class="models-main__item">
-                                    <span class="models-main__item-text"><strong>B-D 170</strong>: Компактный и мощный</span>
+                                    <span class="models-main__item-text">
+                                        <strong>B-D 170</strong>
+                                        : Компактный и мощный
+                                    </span>
                                 </li>
                                 <li class="models-main__item">
-                                    <span class="models-main__item-text"><strong>B-D 200</strong>: Универсальность и производительность</span>
+                                    <span class="models-main__item-text">
+                                        <strong>B-D 200</strong>
+                                        : Универсальность и производительность
+                                    </span>
                                 </li>
                                 <li class="models-main__item">
-                                    <span class="models-main__item-text"><strong>B-D 300</strong>: Передовые технологии</span>
+                                    <span class="models-main__item-text">
+                                        <strong>B-D 300</strong>
+                                        : Передовые технологии
+                                    </span>
                                 </li>
                                 <li class="models-main__item">
-                                    <span class="models-main__item-text"><strong>B-D 500</strong>: Мощь и надежность</span>
+                                    <span class="models-main__item-text">
+                                        <strong>B-D 500</strong>
+                                        : Мощь и надежность
+                                    </span>
                                 </li>
                             </ul>
                             <a class="button primary-button" href="catalog-robots.html">Подробнее</a>
@@ -142,29 +177,61 @@
                     </div>
                 </div>
             </section>
-            <section class="facts">
+            <section class="section facts container">
                 <div class="facts__wrapper">
                     <h2 class="facts__title">Когда факты говорят сами за себя</h2>
                     <div class="facts__content">
                         <div class="facts__main-fact">
                             <h3 class="facts__main-fact-title">Экономия на зарплате</h3>
                             <span class="facts__main-fact-text">от 40%</span>
-
                             <svg class="facts__main-fact-graph" viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <!-- Полигон с градиентом -->
                                 <defs>
-                                    <linearGradient id="graphGradient" x1="0" y1="0" x2="0.5" y2="1">
+                                    <linearGradient
+                                        id="graphGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0.5"
+                                        y2="1"
+                                    >
                                         <stop offset="0%" stop-color="#088DE6"></stop>
                                         <stop offset="100%" stop-color="#18A0FB"></stop>
                                     </linearGradient>
                                 </defs>
                                 <polygon points="0,100 25,82 42,58 70,52 100,40 100,100" fill="url(#graphGradient)"></polygon>
-
                                 <!-- Точки на графике -->
-                                <circle cx="25" cy="82" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
-                                <circle cx="42" cy="58" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
-                                <circle cx="70" cy="52" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
-                                <circle cx="98" cy="41" r="2" fill="#18A0FB" stroke="#ffffff" stroke-width="1"></circle>
+                                <circle
+                                    cx="25"
+                                    cy="82"
+                                    r="2"
+                                    fill="#18A0FB"
+                                    stroke="#ffffff"
+                                    stroke-width="1"
+                                ></circle>
+                                <circle
+                                    cx="42"
+                                    cy="58"
+                                    r="2"
+                                    fill="#18A0FB"
+                                    stroke="#ffffff"
+                                    stroke-width="1"
+                                ></circle>
+                                <circle
+                                    cx="70"
+                                    cy="52"
+                                    r="2"
+                                    fill="#18A0FB"
+                                    stroke="#ffffff"
+                                    stroke-width="1"
+                                ></circle>
+                                <circle
+                                    cx="98"
+                                    cy="41"
+                                    r="2"
+                                    fill="#18A0FB"
+                                    stroke="#ffffff"
+                                    stroke-width="1"
+                                ></circle>
                             </svg>
                         </div>
                         <ul class="facts__list list-style-none">
@@ -173,64 +240,100 @@
                                 <span class="facts__item-text">от 25%</span>
                             </li>
                             <li class="facts__item">
-                              <h4 class="facts__item-title">Повышение безопасности</h4>
-                              <span class="facts__item-text">от 40%</span>
+                                <h4 class="facts__item-title">Повышение безопасности</h4>
+                                <span class="facts__item-text">от 40%</span>
                             </li>
                             <li class="facts__item">
-                              <h4 class="facts__item-title">Гарантийный срок</h4>
-                              <span class="facts__item-text">1000м/ч</span>
+                                <h4 class="facts__item-title">Гарантийный срок</h4>
+                                <span class="facts__item-text">1000м/ч</span>
                             </li>
                             <li class="facts__item">
-                              <h4 class="facts__item-title">Повышение производительности</h4>
-                              <span class="facts__item-text">от 60%</span>
+                                <h4 class="facts__item-title">Повышение производительности</h4>
+                                <span class="facts__item-text">от 60%</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="advantages">
+            <section class="section advantages container">
                 <div class="advantages__wrapper">
                     <h2 class="advantages__title">Преимущества демонтажных роботов brunt</h2>
                     <div class="advantages_content">
                         <ul class="advantages__list advantage list-style-none">
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/add_day_icon.svg" alt="Иконка круглосуточной работы" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/add_day_icon.svg"
+                                        alt="Иконка круглосуточной работы"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Постоянная производительность и круглосуточная работа:</h3>
                                 </div>
                                 <p class="advantage__text">Роботы могут функционировать 24/7 без перерывов и усталости, что значительно увеличивает общую продуктивность и снижает временные затраты на выполнение демонтажных работ.</p>
                             </li>
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/engine_icon.svg" alt="Иконка шестерни" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/engine_icon.svg"
+                                        alt="Иконка шестерни"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Универсальность и функциональность роботов-манипуляторов:</h3>
                                 </div>
                                 <p class="advantage__text">Оснащенные пневматическими или гидравлическими инструментами, роботы-манипуляторы способны выполнять широкий спектр задач, таких как рубка, разрушение и перемещение конструкций.</p>
                             </li>
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/safe_health_icon.svg" alt="Иконка сердка за щитом" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/safe_health_icon.svg"
+                                        alt="Иконка сердка за щитом"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Повышение безопасности и эффективности:</h3>
                                 </div>
                                 <p class="advantage__text">Инновационные решения в области робототехники значительно уменьшают риски для работников, улучшая безопасность и эффективность выполнения сложных и опасных демонтажных задач.</p>
                             </li>
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/road_icon.svg" alt="Иконка дороги ведущей в тоннель" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/road_icon.svg"
+                                        alt="Иконка дороги ведущей в тоннель"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Высокая маневренность и компактность:</h3>
                                 </div>
                                 <p class="advantage__text">Радиоуправляемые роботы-разрушители обладают компактной конструкцией и высокой маневренностью, что позволяет производить демонтаж под контролем одного оператора даже в ограниченных пространствах</p>
                             </li>
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/stone-icon.svg" alt="Иконка камней" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/stone-icon.svg"
+                                        alt="Иконка камней"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Работа в труднодоступных и неблагоприятных условиях:</h3>
                                 </div>
                                 <p class="advantage__text">Компактные конструкции роботов позволяют эффективно работать в узких и труднодоступных местах, таких как лифтовые шахты, тоннели, коллекторы, а также в условиях экстремальных температур и загрязнений.</p>
                             </li>
                             <li class="advantage__item">
                                 <div class="advantage__icon-wrapper">
-                                    <img class="advantage__icon" src="./images/icons/quality_icon.svg" alt="Иконка драгоценного камня" width="55" height="55">
+                                    <img
+                                        class="advantage__icon"
+                                        src="./images/icons/quality_icon.svg"
+                                        alt="Иконка драгоценного камня"
+                                        width="55"
+                                        height="55"
+                                    >
                                     <h3 class="advantage__title">Увеличение скорости и качества:</h3>
                                 </div>
                                 <p class="advantage__text">Использование робототехники способствует значительному увеличению скорости выполнения демонтажных работ, обеспечивая высокое качество конечного результата.</p>
@@ -239,12 +342,95 @@
                     </div>
                 </div>
             </section>
-            <section class="video-block">
+            <section class="section form">
+                <div class="form__wrapper-lg"></div>
+                <div class="form__wrapper container">
+                    <img class="form__scheme-image" src="./images/rorbot-form.png" alt="">
+                    <div class="form__content">
+                        <h2 class="secondary-title">
+                            Закажи уже сегодня
+                        </h2>
+                        <p class="third-base-text">Мы свяжемся с вами, и подоберём для вас индивидуальное предложение, так же проконсультируем по любым вопросам.</p>
+                        <form
+                            class="form__form"
+                            action=""
+                            method="post"
+                            autocomplete="true"
+                        >
+                            <p class="form__block">
+                                <label class="label base-text-form" for="username">Имя*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="username"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Иван Иванов"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="userphone">Телефон*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="userphone"
+                                    id="userphone"
+                                    name="userphone"
+                                    placeholder="+7 (123) 456 - 78 - 90"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="useremail">Email*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="useremail"
+                                    id="useremail"
+                                    name="useremail"
+                                    placeholder="example@email.com"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="usercompany">Компания*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="usercompany"
+                                    id="usercompany"
+                                    name="usercompany"
+                                    placeholder="Друзья и КО"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="usercomments">Комментарий</label>
+                                <textarea
+                                    class="input base-text-form-placeholder"
+                                    for="usercomments"
+                                    id="usercomments"
+                                    name="usercomments"
+                                    placeholder="Поле ввода сообщения"
+                                    required
+                                ></textarea>
+                            </p>
+                            <button type="submit" class="button third-button ">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section video-block container">
                 <div class="video-block__wrapper">
                     <h2 class="video-block__title">Удобство и Возможности наших Роботов</h2>
                     <div class="video-block__content">
                         <div class="video-block__video-wrapper">
-                            <video class="video-block__video" src="./temp_video.mp4" width="100%" poster="./images/for_video.jpg" muted playsinline loop></video>
+                            <video
+                                class="video-block__video"
+                                src="./temp_video.mp4"
+                                width="100%"
+                                poster="./images/for_video.jpg"
+                                muted
+                                playsinline
+                                loop
+                            ></video>
                             <button class="video-block__play-button" type="button" aria-label="Воспроизвести видео"></button>
                         </div>
                         <div class="video-block__description">
@@ -254,7 +440,7 @@
                     </div>
                 </div>
             </section>
-            <section class="faq">
+            <section class="section faq container">
                 <div class="faq__wrapper">
                     <h2 class="faq__title">Часто задаваемые вопросы</h2>
                     <div class="faq__content">

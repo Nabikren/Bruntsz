@@ -1,0 +1,153 @@
+.form {
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    max-width: 742px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      max-width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-left: 0;
+
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      margin-left: 16%;
+    }
+
+    .secondary-title,
+    .third-base-text {
+      text-align: center;
+      color: $white;
+
+      @media screen and (min-width: $tablet-width) {
+        max-width: 700px;
+        text-align: left;
+      }
+    }
+
+    .third-base-text {
+      margin-bottom: 120px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &__wrapper-lg {
+
+    background: linear-gradient(rgba(255, 255, 255, 0.1), $transparent 1px),
+      linear-gradient(90deg,
+        rgba(255, 255, 255, 0.1), $blue-088DE6 1px);
+    background-size: 15px 15px;
+    background-position: center center;
+    position: absolute;
+    padding-bottom: 23px;
+    padding-top: 50px;
+
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 100%;
+      min-width: 88%;
+      padding-bottom: 100px;
+      padding-top: 300px;
+      padding-right: 5%;
+      clip-path: polygon(405px 21%, 100% 0, 100% 100%, 0 100%);
+
+      bottom: 100px;
+      width: 88%;
+      height: 108%;
+      z-index: -1;
+      right: 0;
+    }
+
+    @media screen and (min-width: $desktop-1) {
+      min-width: 90%;
+      padding-right: 15%;
+    }
+
+    @media screen and (min-width: $desktop-2) {
+      min-width: 91%;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      min-width: 76%;
+      width: 76%;
+      clip-path: polygon(410px 21%, 100% 0, 100% 100%, 0 100%);
+      height: 109%;
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient($blue-088DE6, $blue-18A0FB);
+      z-index: -1;
+      opacity: 0.9;
+    }
+  }
+
+  &__form {
+    min-width: inherit;
+    display: grid;
+    gap: 34px;
+
+    @media screen and (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__block {
+    display: grid;
+
+    &:last-of-type {
+      @media screen and (min-width: $tablet-width) {
+        grid-column: 1/-1;
+      }
+    }
+  }
+
+  &__scheme-image {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &__content {
+    padding-top: 100px;
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 600px;
+    }
+  }
+
+  .button {
+    min-width: calc(100% - 40px);
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      min-width: 355px;
+      margin-right: 0;
+    }
+  }
+
+
+}

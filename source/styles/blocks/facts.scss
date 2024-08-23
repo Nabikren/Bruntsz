@@ -26,15 +26,21 @@
     position: relative;
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
-    min-width: 355px;
+    min-width: 340px;
     max-width: 455px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     margin-inline: auto;
+    display: flex;
 
     @media screen and (min-width: $tablet-width) {
       max-width: 600px;
-      margin: 0;
+      min-width: 290px;
+
+      svg {
+        height: 330px;
+        align-self: end;
+      }
     }
   }
 
@@ -55,8 +61,7 @@
     text-align: end;
   }
 
-  &__main-fact-graph {
-  }
+  &__main-fact-graph {}
 
   &__list {
     margin-top: 25px;

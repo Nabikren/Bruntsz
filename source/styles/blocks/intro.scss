@@ -1,0 +1,367 @@
+.intro {
+  min-height: 600px;
+  overflow: hidden;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
+
+  &__wrapper {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    position: relative;
+
+    &::before,
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      display: block;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 20px);
+      border: 2px solid $white;
+      border-top: none;
+      z-index: 1;
+
+      @media screen and (min-width: $desktop-width) {
+        border: 4px solid $white;
+        width: calc(100% - 40px);
+        top: 0;
+        min-height: 550px;
+
+        overflow: hidden;
+      }
+    }
+
+    &::before {
+      transform: translate(-50%, -5px);
+      z-index: 2;
+
+      @media screen and (min-width: $desktop-width) {
+        transform: translate(-50%, 25px);
+      }
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+      width: calc(100% - 10px);
+
+      @media screen and (min-width: $desktop-width) {
+        transform: translate(-50%, 10px);
+        min-height: 580px;
+      }
+    }
+  }
+
+  &__bg,
+  &__ig {
+    position: relative;
+    min-height: inherit;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient($blue-088DE6, $blue-18A0FB);
+      z-index: 1;
+      opacity: 0.9;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
+
+      @media screen and (min-width: $desktop-width) {
+
+        width: 100%;
+        clip-path: none;
+        left: auto;
+        right: 0;
+
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.1), $transparent 1px),
+        linear-gradient(90deg,
+          rgba(255, 255, 255, 0.1), $blue-088DE6 1px);
+      background-size: 15px 15px;
+      background-position: center center;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      padding-bottom: 23px;
+      padding-top: 50px;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 55%);
+
+      @media screen and (min-width: $desktop-width) {
+
+        width: 100%;
+        clip-path: none;
+        right: 0;
+        left: auto;
+
+      }
+    }
+  }
+
+  &__bg {
+
+
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 60%;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      margin-left: -50px;
+    }
+  }
+
+  &__ig {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      display: block;
+      width: 60%;
+
+      &::after,
+      &::before {
+        left: 0;
+        right: auto;
+        width: inherit;
+      }
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      width: 63%;
+    }
+
+    &-image {
+      position: relative;
+      width: inherit;
+      height: 100%;
+    }
+  }
+
+  &__inner {
+    z-index: 1;
+    position: relative;
+    padding: 60px 10px 0 10px;
+    align-content: space-between;
+    display: grid;
+    justify-content: center;
+    min-height: inherit;
+
+    @media screen and (min-width: $desktop) {
+      padding: 0px 10px 0 10px;
+      max-width: 540px;
+      margin: auto;
+      bottom: 0;
+
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 480px;
+      min-height: 100%;
+      align-content: flex-end;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      max-width: 642px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    top: 242px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+
+    @media screen and (min-width: $desktop-width) {
+
+      top: 29px;
+      left: -17%;
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    @media screen and (min-width: $desktop-1) {
+      left: -20%;
+    }
+
+    @media screen and (min-width: $desktop-2) {
+      left: -20%;
+      top: 28px;
+      height: 457px;
+    }
+
+    @media screen and (min-width: $desktop-3) {
+      left: -19%;
+      top: 27px;
+      height: 518px;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      top: 25px;
+      left: -15%;
+      width: 106%;
+      height: 548px;
+      object-fit: cover;
+    }
+
+    &-scheme {
+      position: absolute;
+      z-index: 1;
+      width: 400px;
+      top: 232px;
+      left: 50%;
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 100% 0, 26% 100%, 0% 100%);
+
+      @media screen and (min-width: $desktop-width) {
+        display: none;
+      }
+
+      &-ds {
+
+        display: none;
+
+        @media screen and (min-width: $desktop-width) {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          width: 283px;
+          right: 0;
+          top: 12%;
+
+          &--second {
+            top: 0;
+            left: 0;
+            right: auto;
+            height: 215px;
+            width: 345px;
+          }
+        }
+
+        @media screen and (min-width: $desktop-1) {
+
+          &--second {
+            top: 40px;
+            height: 144px;
+            width: 306px;
+          }
+        }
+
+        @media screen and (min-width: $desktop-2) {
+
+          &--second {
+            top: 48px;
+            height: 146px;
+            width: 291px;
+          }
+        }
+
+        @media screen and (min-width: $desktop-3) {
+          width: 328px;
+
+          &--second {
+            top: 32px;
+            width: 363px;
+            height: 186px;
+          }
+        }
+
+        @media screen and (min-width: $fullHD-width) {
+          width: 345px;
+          right: 0;
+          top: 12%;
+
+          &--second {
+            top: 17px;
+            left: 0;
+            right: auto;
+            height: 214px;
+            width: 411px;
+          }
+        }
+
+
+
+
+      }
+
+      &-coordinate {
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+        bottom: 50px;
+        height: 400px;
+
+        @media screen and (min-width: $desktop-1) {
+          left: 131px;
+          bottom: 82px;
+          height: 464px;
+        }
+
+        @media screen and (min-width: $desktop-3) {
+          left: 190px;
+          bottom: 40px;
+          height: 475px;
+        }
+
+        @media screen and (min-width: $fullHD-width) {
+          left: 290px;
+          bottom: 29px;
+          height: 475px;
+        }
+      }
+    }
+  }
+
+  .secondary-title {
+    padding: 0 7px;
+    font-weight: 500;
+  }
+
+  .base-text {
+    @media screen and (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  .button {
+    @media screen and (min-width: $desktop-width) {
+
+      background-color: $white;
+      color: $blue-18A0FB;
+      display: inline-flex;
+
+      &:hover {
+        color: $white;
+        background-color: $blue-18A0FB;
+        border: 1px solid $white;
+      }
+
+      &:focus {
+        color: $white;
+        background-color: $blue-18A0FB;
+        border: 1px solid $white;
+      }
+    }
+  }
+}

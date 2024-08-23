@@ -91,3 +91,30 @@ img {
     opacity: 0.8;
   }
 }
+
+.section {
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+}
+
+.label {
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  padding: 20px 27px;
+  background-color: $white;
+  border-radius: 20px;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    color: $grey-DFE4EE;
+  }
+}
