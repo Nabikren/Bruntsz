@@ -32,6 +32,10 @@
     overflow: hidden;
     margin-inline: auto;
     display: flex;
+    background-image: url('../../images/main_fact_img@2x.webp');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
 
     @media screen and (min-width: $tablet-width) {
       max-width: 600px;
@@ -56,9 +60,13 @@
   &__main-fact-text {
     position: absolute;
     margin: 0;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10%;
+    right: 10%;
     text-align: end;
+    font-family: $secondary-font;
+    font-size: 44px;
+    line-height: 44px;
+    color: $white;
   }
 
   &__main-fact-graph {}
@@ -77,11 +85,16 @@
   }
 
   &__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
-    padding-top: 30%;
+    padding-top: clamp(0px, 40%, 140px);
+    padding-left: clamp(0px, 7%, 35px);
     min-width: 280px;
-    max-width: 360px;
+    max-width: 320px;
     aspect-ratio: 1 / 1;
     margin-inline: auto;
     margin-top: 20px;
@@ -89,6 +102,55 @@
     @media screen and (min-width: $tablet-width) {
       margin: 0;
       min-width: 150px;
+
+      &:last-of-type {
+      word-break: break-all;
+      }
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      &:last-of-type {
+      word-break: inherit;
+      }
+    }
+  }
+
+  &__item-icon {
+    position: absolute;
+    top: clamp(0px, 7%, 35px);
+    left: clamp(0px, 7%, 35px);
+    height: 61px;
+
+    @media screen and (min-width: $tablet-width) {
+      height: clamp(40px, 20%, 61px);
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $grey-4C4C4C;
+
+    @media screen and (min-width: $tablet-width) {
+      font-size: clamp(14px, 2vw, 20px);
+      line-height: 20px;
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+    margin-bottom: 10%;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+
+    @media screen and (min-width: $tablet-width) {
+      font-size: 26px;
+      line-height: 36px;
     }
   }
 }
+
+

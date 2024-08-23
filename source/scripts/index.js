@@ -34,24 +34,20 @@ const faqItems = document.querySelectorAll('.faq__item');
 faqItems.forEach(item => {
     const questionWrapper = item.querySelector('.faq__question-wrapper');
     const answerWrapper = item.querySelector('.faq__answer-wrapper');
-    const button = item.querySelector('.faq__button');
 
     // Функция для переключения состояния
-    const toggleFaqItem = () => {
+  const toggleFaqItem = (evt) => {
+        evt.preventDefault();
         const isOpen = answerWrapper.style.display === 'block';
         if (isOpen) {
             answerWrapper.style.display = 'none';
-            button.classList.remove('faq__button--opened');
         } else {
             answerWrapper.style.display = 'block';
-            button.classList.add('faq__button--opened');
         }
-    };
+  };
 
     // Добавляем обработчик на обертку вопроса
     questionWrapper.addEventListener('click', toggleFaqItem);
-    // И на кнопку, чтобы они оба работали одинаково
-    button.addEventListener('click', toggleFaqItem);
 });
 
 
