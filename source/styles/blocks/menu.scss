@@ -36,15 +36,21 @@
     @media screen and (min-width: $desktop-width) {
       color: $blue-18A0FB;
       padding: 0;
-      position: relative;
+      position: absolute;
+      bottom: -85px;
+      right: 30px;
       left: auto;
-      top: auto;
+
+      svg {
+        display: none;
+      }
     }
   }
 
   &__contacts {
     display: grid;
     justify-items: flex-end;
+    position: relative;
   }
 
   &.active {
