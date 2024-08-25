@@ -6,6 +6,7 @@
 @import "./global/text.scss";
 @import "./global/visually-hidden.scss";
 @import "./global/buttons.scss";
+@import "./global/list.scss";
 
 /* LAYOUT */
 @import "./layout/header.scss";
@@ -15,7 +16,6 @@
 @import "./blocks/logo.scss";
 @import "./blocks/contacts-item.scss";
 @import "./blocks/header-info.scss";
-@import "./blocks/hero.scss";
 @import "./blocks/header-action.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/nav.scss";
@@ -26,6 +26,7 @@
 @import "./blocks/faq.scss";
 @import "./blocks/models-main.scss";
 @import "./blocks/facts.scss";
+@import "./blocks/products-main.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/form.scss";
 @import "./blocks/separator.scss";

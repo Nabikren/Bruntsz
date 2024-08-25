@@ -1,0 +1,126 @@
+.products-main {
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 950px;
+
+    &::before,
+    &::after {
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      min-width: calc(100% - 20px);
+      min-height: calc(100% - 20px);
+      border-top: 5px solid $white;
+      border-left: 5px solid $white;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &::after {
+      min-width: calc(100% - 50px);
+      min-height: calc(100% - 50px);
+    }
+  }
+
+  @media screen and (min-width: $desktop-1) {
+    min-height: 950px;
+  }
+
+  @media screen and (min-width: $desktop-2) {
+    min-height: 930px;
+  }
+
+  @media screen and (min-width: $desktop-3) {
+    min-height: 990px;
+  }
+
+  @media screen and (min-width: $fullHD-width) {
+    min-height: 1030px;
+  }
+
+  .container {
+    min-height: inherit;
+    display: grid;
+    gap: 20px;
+
+    @media screen and (min-width: 530px) {
+      grid-template-columns: 50% 45%;
+      min-height: 420px;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      grid-template-columns: 55% 45%;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: inherit;
+
+    @media screen and (min-width: 530px) {
+      grid-column: 2;
+      min-height: 420px;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      grid-column: 2/-1;
+      padding-right: 10px;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      padding-top: 150px;
+    }
+  }
+
+  .list {
+    margin-bottom: 53px;
+  }
+
+  .button {
+    max-width: 264px;
+  }
+
+  &__image-wrapper {
+    background-image: url('/images/mobile-molots.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 55%;
+    min-height: inherit;
+    grid-column: 1/-1;
+
+    @media screen and (min-width: 430px) {
+      background-size: cover;
+      min-height: 620px;
+    }
+
+    @media screen and (min-width: 530px) {
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      grid-column: 1/2;
+      min-height: 420px;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      left: 0;
+      min-height: 520px;
+      background-image: url('/images/molots.webp');
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-height: 820px;
+    }
+
+    @media screen and (min-width: $desktop-3) {
+      min-height: 1000px;
+    }
+  }
+}
