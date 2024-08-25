@@ -28,6 +28,10 @@
     left: 10px;
     padding-left: 50px;
     color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 
     @media screen and (min-width: $desktop-width) {
       color: $blue-18A0FB;
@@ -135,7 +139,9 @@
     color: $blue-18A0FB;
     border-radius: 5px;
     font-size: 15px;
-    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 
     @media screen and (min-width: $desktop-width) {
       order: 1;
