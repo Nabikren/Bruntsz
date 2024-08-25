@@ -7,6 +7,26 @@
     padding-top: 240px;
     margin-top: -215px;
     margin-bottom: 100px;
+
+    &::before,
+    &::after {
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      min-width: calc(100% - 20px);
+      min-height: calc(100% - 20px);
+      border-bottom: 5px solid $white;
+      border-right: 5px solid $white;
+      pointer-events: none;
+    }
+
+    &::after {
+      min-width: calc(100% - 50px);
+      min-height: calc(100% - 50px);
+    }
+
   }
 
   @media screen and (min-width: $desktop-3) {
