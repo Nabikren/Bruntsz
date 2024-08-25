@@ -18,16 +18,17 @@
   &__icon-wrapper {
     display: flex;
     column-gap: 20px;
+    align-items: center;
   }
 
   &__icon {
     width: 55px;
     height: 55px;
-    margin: auto;
 
     @media screen and (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
+      margin: 0;
     }
   }
 
