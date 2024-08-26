@@ -119,3 +119,23 @@ img {
     color: $grey-DFE4EE;
   }
 }
+
+
+.search {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+}
+
+.input-search {
+  border: 1px solid $blue-18A0FB;
+  padding: 10px 8px 8px 30px;
+  border-radius: 15px;
+  color: $grey-A0A3BD;
+  font-weight: 700;
+}
