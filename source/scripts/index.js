@@ -51,6 +51,13 @@ faqItems.forEach(item => {
 });
 
 
+//запускаем robots-card.js чтобы аоявились карточки роботов
+import { renderRobotsCards } from './modules/robots-card.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.robots-card');
+  renderRobotsCards(container);
+});
 
 
 

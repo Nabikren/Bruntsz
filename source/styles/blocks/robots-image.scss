@@ -1,0 +1,28 @@
+.robots-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+
+
+  &__main-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__sub-images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__sub-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

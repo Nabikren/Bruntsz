@@ -65,7 +65,7 @@
         <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="favicons/180.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <script src="scripts/index.js" defer></script>
+        <script type="module" src="scripts/index.js" defer></script>
     </head>
     <body class="page__body">
         <header class="header section">
@@ -115,32 +115,34 @@
             <h1 class="visually-hidden">Каталог Демонтажные роботы</h1>
             <section class="section catalog-header container">
                 <h2 class="catalog-header__title">Каталог</h2>
-                <span class="catalog-header__breadcrumbs">Демонтажные роботы</span>
+                <div class="catalog-header__breadcrumbs-wrapper">
+                    <a class="catalog-header__breadcrumbs">Демонтажные роботы</a>
+                </div>
             </section>
             <section class="section catalog-robots container">
                 <div class="catalog-robots__aside robots-aside">
                     <a class="robots-aside__title" href="catalog-robots.html">Демонтажные роботы</a>
                     <ul class="robots-aside__list list-style-none">
                         <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="B-D170.html">B-D 170</a>
+                            <a class="robots-aside__link" href="./robots/B-D170.html">B-D 170</a>
                         </li>
                         <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="B-D200.html">B-D 200</a>
+                            <a class="robots-aside__link" href="./robots/B-D200.html">B-D 200</a>
                         </li>
                         <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="B-D300.html">B-D 300</a>
+                            <a class="robots-aside__link" href="./robots/B-D300.html">B-D 300</a>
                         </li>
                         <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="B-D500.html">B-D 500</a>
+                            <a class="robots-aside__link" href="./robots/B-D500.html">B-D 500</a>
                         </li>
                     </ul>
                 </div>
+                <h2 class="catalog-robots__title">Демонтажные роботы Brunt</h2>
                 <div class="catalog-robots__description robots-description">
-                    <h2 class="robots-description__title">Демонтажные роботы Brunt</h2>
                     <h3 class="robots-description__subtitle">Сердце демонтажного робота: передовые компоненты мировых лидеров</h3>
                     <div class="robots-description__main-text">
                         <div class="robots-description__ferst-text">
-                            <p>Наши демонтажные роботы оснащены передовыми компонентами от мировых лидеров (ABB, Sauer Automation, Schneider, Walvoil, NACHI-FUJIKOSHICORP, SB/EPIROC), что обеспечивает:</p>
+                            <p>Наши демонтажные роботы оснащены передовыми компонентами от мировых лидеров <strong>(ABB, Sauer Automation, Schneider, Walvoil, NACHI-FUJIKOSHICORP, SB/EPIROC)</strong>, что обеспечивает:</p>
                             <ul>
                                 <li>Высокую производительность: Оптимизированные для тяжелых условий работы компоненты обеспечивают максимальную эффективность.</li>
                                 <li>Надежность: Проверенные временем компоненты гарантируют бесперебойную работу.</li>
@@ -160,25 +162,14 @@
                     <p class="robots-description__last-text">В итоге, наши демонтажные роботы являются одними из самых надежных и эффективных на рынке.</p>
                 </div>
                 <div class="catalog-robots__image-wrapper robots-image">
-                    <img class="robots-image__image1" src="./images/catalog/details_foto_1_mobile@2x.webp" alt="фотограция поршней">
-                    <img class="robots-image__image2" src="./images/catalog/details_foto_2_mobile@2x.webp" alt="фотограция стояк после покраски">
-                    <img class="robots-image__image3" src="./images/catalog/details_foto_3_mobile@2x.webp" alt="фотография ходовой в разборе">
+                    <img class="robots-image__main-image" src="./images/catalog/details_foto_1_mobile@2x.webp" alt="фотограция поршней">
+                    <div class="robots-image__sub-images-wrapper">
+                        <img class="robots-image__sub-image" src="./images/catalog/details_foto_2_mobile@2x.webp" alt="фотограция стояк после покраски">
+                        <img class="robots-image__sub-image" src="./images/catalog/details_foto_3_mobile@2x.webp" alt="фотография ходовой в разборе">
+                    </div>
                 </div>
                 <div class="catalog-robots__robots-wrapper robots-card">
-                    <ul class="robots-card__list list-style-none">
-                        <li class="robots-card__item">
-                            <a class="robots-card__link" href="B-D170.html">#</a>
-                        </li>
-                        <li class="robots-card__item">
-                            <a class="robots-card__link" href="B-D200.html">#</a>
-                        </li>
-                        <li class="robots-card__item">
-                            <a class="robots-card__link" href="B-D300.html">#</a>
-                        </li>
-                        <li class="robots-card__item">
-                            <a class="robots-card__link" href="B-D500.html">#</a>
-                        </li>
-                    </ul>
+
                 </div>
             </section>
         </main>

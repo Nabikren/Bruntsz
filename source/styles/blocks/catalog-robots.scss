@@ -1,0 +1,23 @@
+.catalog-robots {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    order: 1;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+
+  &__description {
+    order: 3;
+  }
+
+  &__image-wrapper {
+    order: 2;
+  }
+
+  &__robots-wrapper {
+    order: 4;
+  }
+}
