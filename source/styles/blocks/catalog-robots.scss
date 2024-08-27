@@ -1,0 +1,72 @@
+.catalog-robots {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  &__aside {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+      display: block;
+    }
+  }
+
+  &__title {
+    order: 1;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: 4 / 10;
+      grid-row: 1 / 2;
+      order: none;
+      margin: 0;
+      font-size: 44px;
+      line-height: 56px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 56px;
+      line-height: 70px;
+    }
+  }
+
+  &__description {
+    order: 3;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: 4 / 10;
+      grid-row: 2 / 3;
+      order: none;
+    }
+  }
+
+  &__image-wrapper {
+    order: 2;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: 10 / 13;
+      grid-row: 1 / 3;
+      order: none;
+    }
+  }
+
+  &__robots-wrapper {
+    order: 4;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: 4 / 10;
+      grid-row: 3 / 4;
+      order: none;
+    }
+  }
+}
