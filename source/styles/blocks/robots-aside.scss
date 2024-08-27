@@ -18,6 +18,10 @@
 
     &--current {
       border: 1px solid $blue-18A0FB;
+
+      .robots-aside__link {
+        color: $black;
+      }
     }
   }
 
