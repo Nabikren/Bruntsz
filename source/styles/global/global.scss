@@ -37,6 +37,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%;
+    overflow-x: hidden;
 
     @media screen and (min-width: $tablet-width) {
       line-height: 1.25;
@@ -117,4 +118,24 @@ img {
   &::placeholder {
     color: $grey-DFE4EE;
   }
+}
+
+
+.search {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+}
+
+.input-search {
+  border: 1px solid $blue-18A0FB;
+  padding: 10px 8px 8px 30px;
+  border-radius: 15px;
+  color: $grey-A0A3BD;
+  font-weight: 700;
 }

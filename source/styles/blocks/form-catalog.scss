@@ -1,0 +1,33 @@
+.form.form-catalog {
+  background-image: url('/images/form-1-bg.webp');
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop-3) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  .form__wrapper {
+    @media screen and (min-width: $desktop-width) {
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $fullHD-width) {
+      margin-right: auto;
+    }
+  }
+
+  .form__content {
+    display: flex;
+    max-width: 100%;
+  }
+}
