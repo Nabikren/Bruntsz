@@ -1,3 +1,31 @@
 .robots-aside {
-  display: none;
+  &__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $black;
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 20px;
+    }
+  }
+
+  &__item {
+    padding: 7px 7px 7px 20px;
+    max-width: 180px;
+
+    &--current {
+      border: 1px solid $blue-18A0FB;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grey-4C4C4C;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
 }

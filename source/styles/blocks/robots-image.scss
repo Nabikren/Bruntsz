@@ -3,7 +3,20 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 10px;
+  padding-inline: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 0.49fr;
+    gap: 10px;
+    max-width: 800px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
   &__main-image {
@@ -18,6 +31,18 @@
     grid-gap: 10px;
     width: 100%;
     margin-top: 10px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__sub-image {
