@@ -4,6 +4,7 @@ const menu = document.getElementById('menu');
 const overlay = document.getElementById('overlay');
 
 export function toggleMenu() {
+  if (burgerButtonOpen == null && burgerButtonClose == null) return;
   burgerButtonOpen.addEventListener('click', () => {
     menu.classList.toggle('active');
     overlay.style.display = 'flex';

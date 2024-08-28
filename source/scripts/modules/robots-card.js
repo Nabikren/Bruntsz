@@ -1,71 +1,50 @@
-// Массив данных о роботах
-const robots = [
-  {
-    id: 170,
-    name: 'B-D 170',
-    image: './images/catalog/robot_card_170_desktop@2x.webp',
-    property: 'Вес: ',
-    propertyValue: '1620',
-    propertyUnit: 'кг',
-    link: './robots/B-D170.html'
-  },
-  {
-    id: 200,
-    name: 'B-D 200',
-    image: './images/catalog/robot_card_200_desktop@2x.webp',
-    property: 'Вес: ',
-    propertyValue: '2450',
-    propertyUnit: 'кг',
-    link: './robots/B-D200.html'
-  },
-  {
-    id: 300,
-    name: 'B-D 300',
-    image: './images/catalog/robot_card_300_desktop@2x.webp',
-    property: 'Вес: ',
-    propertyValue: '3950',
-    propertyUnit: 'кг',
-    link: './robots/B-D300.html'
-  },
-  {
-    id: 500,
-    name: 'B-D 500',
-    image: './images/catalog/robot_card_500_desktop@2x.webp',
-    property: 'Вес: ',
-    propertyValue: '5900',
-    propertyUnit: 'кг',
-    link: './robots/B-D500.html'
-  }
-];
+import { robots } from './../data/robots.js'
+
+let card = null;
+let link = null;
+let content = null;
+let title = null;
+let property = null;
+let propertyText = null;
+let propertyValue = null;
+let propertyUnit = null;
+let image = null;
+
+function createElements() {
+  card = document.createElement('div');
+  link = document.createElement('a');
+  content = document.createElement('div');
+  title = document.createElement('h3');
+  property = document.createElement('p');
+  propertyText = document.createElement('span');
+  propertyValue = document.createElement('span');
+  propertyUnit = document.createElement('span');
+  image = document.createElement('img');
+}
+
 
 // Функция для создания карточки товара
-function createRobotsCard(robot) {
-  const card = document.createElement('div');
-  card.classList.add('robots-card__wrapper');
+function createRobotsCard(robot, container) {
+  createElements();
 
-  const link = document.createElement('a');
+  if (container.closest('[class*="swiper"]')) {
+    card.classList.add('robots-card__wrapper');
+    card.classList.add('swiper-slide');
+  } else {
+    card.classList.add('robots-card__wrapper');
+  }
   link.href = robot.link;
   link.classList.add('robots-card__link');
-
-  const content = document.createElement('div');
   content.classList.add('robots-card__content');
-
-  const title = document.createElement('h3');
   title.classList.add('robots-card__title');
   title.textContent = robot.name;
-
-  const property = document.createElement('p');
   property.classList.add('robots-card__property');
 
   // Создание частей текста
-  const propertyText = document.createElement('span');
-  propertyText.textContent = robot.property;
 
-  const propertyValue = document.createElement('span');
+  propertyText.textContent = robot.property;
   propertyValue.classList.add('blue-text');
   propertyValue.textContent = robot.propertyValue;
-
-  const propertyUnit = document.createElement('span');
   propertyUnit.textContent = robot.propertyUnit;
 
   // Сборка элемента property
@@ -76,7 +55,6 @@ function createRobotsCard(robot) {
   content.appendChild(title);
   content.appendChild(property);
 
-  const image = document.createElement('img');
   image.src = robot.image;
   image.alt = robot.name;
   image.classList.add('robots-card__image');
@@ -90,8 +68,16 @@ function createRobotsCard(robot) {
 
 // Функция для рендеринга карточек на страницу
 export function renderRobotsCards(container) {
+
   robots.forEach(robot => {
-    const card = createRobotsCard(robot);
-    container.appendChild(card);
+    const card = createRobotsCard(robot, container);
+
+    if (container.closest('[class*="swiper"]')) {
+      const wrapper = container.querySelector('.swiper-wrapper');
+      wrapper.appendChild(card);
+    } else {
+      container.appendChild(card);
+    }
   });
 }
+
