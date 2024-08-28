@@ -1,0 +1,29 @@
+.dropdown {
+  &__tab {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $black;
+    max-width: 50%;
+
+    svg {
+      transform: rotate(270deg);
+      margin-left: auto;
+      transition: 0.3s ease-in-out;
+
+      &.state {
+
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    display: none;
+  }
+}
