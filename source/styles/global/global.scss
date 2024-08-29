@@ -139,3 +139,63 @@ img {
   color: $grey-A0A3BD;
   font-weight: 700;
 }
+
+
+.invalid {
+  border: 2px solid red;
+}
+
+.valid {
+  border: 2px solid greenyellow;
+  position: relative;
+}
+
+.valid-class {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    clip-path: polygon(16% 43%, 38% 73%, 88% 0, 33% 100%);
+  }
+}
+
+.invalid-class {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  }
+}
+
+.red-text,
+.green-text {
+  background-color: rgba(0, 29, 158, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  // position: absolute;
+  // bottom: -50px;
+  // margin: 0;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: greenyellow;
+}

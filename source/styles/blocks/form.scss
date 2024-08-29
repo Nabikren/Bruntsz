@@ -118,6 +118,8 @@
 
   &__block {
     display: grid;
+    position: relative;
+    align-content: baseline;
 
     &:last-of-type {
       @media screen and (min-width: $tablet-width) {

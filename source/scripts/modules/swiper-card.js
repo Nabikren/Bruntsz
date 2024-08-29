@@ -1,4 +1,4 @@
-import { robots } from './../data/robots.js'
+import { robots } from '../data/robots.js'
 
 let card = null;
 let link = null;
@@ -28,17 +28,17 @@ function createRobotsCard(robot, container) {
   createElements();
 
   if (container.closest('[class*="swiper"]')) {
-    card.classList.add('robots-card__wrapper');
+    card.classList.add('swiper-card__wrapper');
     card.classList.add('swiper-slide');
   } else {
-    card.classList.add('robots-card__wrapper');
+    card.classList.add('swiper-card__wrapper');
   }
   link.href = robot.link;
-  link.classList.add('robots-card__link');
-  content.classList.add('robots-card__content');
-  title.classList.add('robots-card__title');
+  link.classList.add('swiper-card__link');
+  content.classList.add('swiper-card__content');
+  title.classList.add('swiper-card__title');
   title.textContent = robot.name;
-  property.classList.add('robots-card__property');
+  property.classList.add('swiper-card__property');
 
   // Создание частей текста
 
@@ -57,7 +57,7 @@ function createRobotsCard(robot, container) {
 
   image.src = robot.image;
   image.alt = robot.name;
-  image.classList.add('robots-card__image');
+  image.classList.add('swiper-card__image');
 
   link.appendChild(content);
   link.appendChild(image);
