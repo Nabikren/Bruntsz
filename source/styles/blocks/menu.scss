@@ -37,9 +37,11 @@
       color: $blue-18A0FB;
       padding: 0;
       position: absolute;
-      bottom: -85px;
-      right: 30px;
+      top: 100px;
+      right: 75px;
       left: auto;
+      display: block;
+      height: 30px;
 
       svg {
         display: none;
@@ -50,7 +52,10 @@
   &__contacts {
     display: grid;
     justify-items: flex-end;
-    position: relative;
+
+    @media screen and (min-width: $desktop-width) {
+      position: static;
+    }
   }
 
   &.active {

@@ -2,21 +2,30 @@
   background-image: url('/images/form-1-bg.webp');
   margin: 0;
   padding: 0;
-  padding-bottom: 100px;
 
   @media screen and (min-width: $desktop-width) {
     margin: 0;
-    padding: 0;
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: $desktop-3) {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 100px;
+  &::before,
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      border: 5px solid #fff;
+      display: block;
+    }
+  }
+
+  &::after {
+    min-width: calc(100% - 50px);
+    min-height: calc(100% - 50px);
   }
 
   .form__wrapper {
+    position: relative;
+
     @media screen and (min-width: $desktop-width) {
       margin-right: auto;
     }
@@ -24,10 +33,55 @@
     @media screen and (min-width: $fullHD-width) {
       margin-right: auto;
     }
+
+    &::before {
+      display: none;
+      content: "";
+      bottom: -50px;
+      left: 50px;
+      position: absolute;
+      width: 250px;
+      height: 100%;
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('./../../images/catalog/robot_form_desktop@2x.webp');
+      pointer-events: none;
+
+      @media screen and (min-width: $desktop-width) {
+        display: block;
+      }
+
+      @media screen and (min-width: $fullHD-width) {
+        left: -11vw;
+        width: 330px;
+      }
+    }
   }
 
   .form__content {
-    display: flex;
-    max-width: 100%;
+    display: grid;
+    padding-top: 0;
+
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      max-width: 100%;
+      padding-top: 60px;
+    }
+  }
+
+  .form-catalog__list {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      display: block;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: $white;
+      }
+    }
   }
 }

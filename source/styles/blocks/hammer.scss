@@ -1,0 +1,30 @@
+.hammer.molots {
+  .molots__info-wrapper {
+    grid-template-columns: auto;
+  }
+
+  .molots__presentation {
+    order: -1;
+  }
+
+  .molots__presentation-images {
+    position: relative;
+  }
+
+  .molots__presentation-images img:nth-of-type(2) {
+    grid-column: 1 / 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+
+    @media screen and (min-width: $tablet-width) {
+      position: static;
+      width: auto;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 30%;
+    }
+  }
+}

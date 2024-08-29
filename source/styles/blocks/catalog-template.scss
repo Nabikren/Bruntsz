@@ -1,4 +1,21 @@
 .catalog {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $blue-18A0FB;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    top: 42px;
+    z-index: -1;
+
+    @media screen and (min-width: $desktop-width) {
+      top: 25px;
+    }
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -34,59 +51,60 @@
       background-color: $white;
       max-width: min-content;
       padding: 0 10px;
+      margin: 0;
     }
   }
 
   &__breadcrumbs {
 
-  display: flex;
-  gap: 10px;
-
-  @media screen and (min-width: $desktop-width) {
-    gap: 20px;
-  }
-
-  li {
-    padding: 10px;
-  }
-
-  li:last-of-type {
-    a {
-      color: $grey-474747;
-    }
-  }
-
-  li:not(:first-of-type) {
-    position: relative;
-
-    &::before {
-      content: '';
-      left: -10px;
-      top: 50%;
-      transform: translateY(-50%);
-      position: absolute;
-      background-image: url('/images/icons/stack.svg#breadcrumbs_arrow_icom');
-      width: 15px;
-      height: 15px;
-
-      @media screen and (min-width: $desktop-width) {
-        width: 25px;
-        height: 25px;
-        left: -20px;
-      }
-    }
-  }
-
-  a {
-    color: $black;
-    text-decoration: none;
-    font-size: 12px;
+    display: flex;
+    gap: 10px;
 
     @media screen and (min-width: $desktop-width) {
-      font-size: 18px;
-      grid-column: 3/13;
+      gap: 20px;
     }
-  }
+
+    li {
+      padding: 10px;
+    }
+
+    li:last-of-type {
+      a {
+        color: $grey-474747;
+      }
+    }
+
+    li:not(:first-of-type) {
+      position: relative;
+
+      &::before {
+        content: '';
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        background-image: url('/images/icons/stack.svg#breadcrumbs_arrow_icom');
+        width: 15px;
+        height: 15px;
+
+        @media screen and (min-width: $desktop-width) {
+          width: 25px;
+          height: 25px;
+          left: -20px;
+        }
+      }
+    }
+
+    a {
+      color: $black;
+      text-decoration: none;
+      font-size: 12px;
+
+      @media screen and (min-width: $desktop-width) {
+        font-size: 18px;
+        grid-column: 3/13;
+      }
+    }
   }
 
   &__content {
@@ -97,51 +115,18 @@
     border-bottom: 1px solid $blue-18A0FB;
 
     @media screen and (min-width: $desktop-width) {
+      margin-top: 80px;
       padding-bottom: 130px;
       border: none;
     }
   }
 
-  &__aside {
+  &__aside { // прописать доп класс для элемента : "catalog-aside"
     display: none;
 
     @media screen and (min-width: $desktop) {
       grid-column: 1 / 3;
       display: block;
-    }
-
-    &__title {
-      margin-bottom: 10px;
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 700;
-      text-decoration: none;
-      color: $black;
-
-      @media screen and (min-width: $desktop-width) {
-        font-size: 20px;
-      }
-    }
-
-    &__item {
-      padding: 7px 7px 7px 20px;
-      max-width: 180px;
-
-      &--current {
-        border: 1px solid $blue-18A0FB;
-
-        .link {
-          color: $black;
-        }
-      }
-    }
-
-    &__link {
-      text-decoration: none;
-      color: $grey-4C4C4C;
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 700;
     }
   }
 
@@ -155,9 +140,10 @@
       grid-template-columns: 4fr 2fr;
     }
 
-    .secondary-title {// прописать доп класс для элемента : "secondary-title"
+    .secondary-title {// прописать доп класс для элемента <h3>: "secondary-title"
       grid-column: 1 / -1;
       order: -1;
+      margin: 0;
 
       @media screen and (min-width: $desktop-width) {
         order: none;
@@ -165,14 +151,91 @@
     }
   }
 
-  //&__description {} тут просто обертка, стилей нет, если внутри есть элементы стилизованные, то раскоментить класс
+  &__description {
+
+  }
 
   &__presentation {
-    order: 2;
+    order: -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     @media screen and (min-width: $desktop) {
-      grid-column: 10 / 13;
-      order: none;
+      order: 1;
+    }
+  }
+
+  &__presentation-images {
+    grid-column: 1 / -1;
+    width: 100%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      display: grid;
+    }
+
+    img {
+      max-height: 230px;
+
+      &:first-of-type {
+        grid-column: 1/-1;
+        align-self: center;
+        justify-self: center;
+
+        @media screen and (min-width: $tablet-width) {
+          grid-column: 1/4;
+        }
+
+        @media screen and (min-width: $desktop-width) {
+          grid-column: 1/-1;
+        }
+      }
+
+      &:nth-of-type(2) {
+        grid-column: 1/5;
+
+        @media screen and (min-width: $tablet-width) {
+          grid-column: 4/8;
+        }
+
+        @media screen and (min-width: $desktop-width) {
+          grid-column: 1/-1;
+          justify-self: center;
+        }
+      }
+
+      &:nth-of-type(3) {
+        grid-column: 5/-1;
+        height: 100%;
+        object-fit: cover;
+
+        @media screen and (min-width: $tablet-width) {
+          grid-column: 8/13;
+        }
+
+        @media screen and (min-width: $desktop-width) {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: $desktop-width) {
+        max-height: 300px;
+      }
+    }
+  }
+
+  &__info-about {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      display: block;
     }
   }
 
@@ -192,11 +255,6 @@
   }
 
   &__product { // для разметки страниц с роботом или молотком
-    .image{
-
-    }
-    .text{
-
-    }
+    display: contents;
   }
 }
