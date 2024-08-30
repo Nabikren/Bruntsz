@@ -1,4 +1,17 @@
-.robots-card {
+.swiper-card-similar {
+  position: relative;
+  padding: 0 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 100px;
+  }
+}
+
+.swiper-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -17,43 +30,35 @@
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
     position: relative;
-    width: clamp(355px, 30vw, 400px);
     aspect-ratio: 1 / 1;
+    width: 100%;
 
-    .robots-card__image {
+    .swiper-card__image {
       width: auto;
-      height: auto;
+      height: 100%;
       object-fit: contain;
-
-      &:nth-of-type(1) {
-        height: 80%;
-      }
-
-      &:nth-of-type(3) {
-        height: 100%;
-      }
-
-      &:nth-of-type(4) {
-        height: 80%;
-      }
     }
   }
 
   &__link {
     text-decoration: none;
-    width: clamp(355px, 30vw, 400px);
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    height: inherit;
   }
+
 
   &__content {
     text-decoration: none;
     position: absolute;
     top: 20px;
     left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
   }
 
   &__title {
