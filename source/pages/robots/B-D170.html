@@ -60,12 +60,12 @@
             type="font/woff"
             crossorigin="anonymous"
         >
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="./../../../styles/styles.css">
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="favicons/180.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <script type="module" src="scripts/index.js" defer></script>
+        <script src="./../../../scripts/index.js" defer></script>
     </head>
     <body class="page__body">
         <header class="header section">
@@ -85,13 +85,13 @@
                     <nav class="nav">
                         <ul class="nav__list list-style-none">
                             <li>
-                                <a class="link current" href="index.html">Главная</a>
+                                <a class="link current" href="index.html" aria-current="index">Главная</a>
                             </li>
                             <li>
                                 <a class="link" href="catalog-amout.html">Навесное оборудование</a>
                             </li>
                             <li>
-                                <a class="link" href="catalog-robots.html" aria-current="index">Демонтажные роботы</a>
+                                <a class="link" href="catalog-robots.html">Демонтажные роботы</a>
                             </li>
                             <li>
                                 <a class="link" href="contacts.html">Контакты</a>
@@ -104,74 +104,56 @@
                                 <span>ПН-ПТ</span>
                                 <span>9:00-18:00</span>
                             </p>
-                            <a class="button primary-button" href="tel:+79516484842">Позвонить</a>
+                            <a class="button primary-button" href="tel:+79516484842">
+                                Позвонить
+                                <svg width="20" height="50">
+                                    <use href="./images/icons/stack.svg#phone_icon"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <a class="link menu__email" href="mailto:brunt-sz@mail.ru">brunt-sz@mail.ru</a>
+                        <a class="link menu__email" href="mailto:brunt-sz@mail.ru">
+                            <svg width="20" height="50">
+                                <use href="./images/icons/stack.svg#email_icon"></use>
+                            </svg>
+                            brunt-sz@mail.ru
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <h1 class="visually-hidden">Каталог Демонтажные роботы</h1>
+            <h1 class="visually-hidden">Демонтажный робот B-D170</h1>
             <section class="section catalog-header container">
-                <h2 class="catalog-header__title">Каталог</h2>
+                <h2 class="secondary-title">Каталог</h2>
                 <div class="catalog-header__breadcrumbs-wrapper">
-                    <a class="catalog-header__breadcrumbs">Демонтажные роботы</a>
+                    <ol class="breadcrumbs list-style-none">
+                        <li>
+                            <a class="base-text-form" href="./../catalog-robots.html">Демонтажные роботы</a>
+                        </li>
+                        <li>
+                            <a class="base-text-form" href="">B-D 170</a>
+                        </li>
+                    </ol>
                 </div>
             </section>
-            <section class="section catalog-robots container">
-                <div class="catalog-robots__aside robots-aside">
-                    <a class="robots-aside__title" href="catalog-robots.html">Демонтажные роботы</a>
-                    <ul class="robots-aside__list list-style-none">
-                        <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="./robots/B-D170.html">B-D 170</a>
+            <section class="section catalog-robot container">
+                <div class="catalog-robot__aside catalog-aside">
+                    <a class="catalog-aside__title" href="./../catalog-robots.html">Демонтажные роботы</a>
+                    <ul class="catalog-aside__list list-style-none">
+                        <li class="catalog-aside__item catalog-aside__item--current">
+                            <a class="catalog-aside__link" href="">B-D 170</a>
                         </li>
-                        <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="./robots/B-D200.html">B-D 200</a>
+                        <li class="catalog-aside__item">
+                            <a class="catalog-aside__link" href="./B-D200.html">B-D 200</a>
                         </li>
-                        <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="./robots/B-D300.html">B-D 300</a>
+                        <li class="catalog-aside__item">
+                            <a class="catalog-aside__link" href="./B-D300.html">B-D 300</a>
                         </li>
-                        <li class="robots-aside__item">
-                            <a class="robots-aside__link" href="./robots/B-D500.html">B-D 500</a>
+                        <li class="catalog-aside__item">
+                            <a class="catalog-aside__link" href="./B-D500.html">B-D 500</a>
                         </li>
                     </ul>
                 </div>
-                <h2 class="catalog-robots__title">Демонтажные роботы Brunt</h2>
-                <div class="catalog-robots__description robots-description">
-                    <h3 class="robots-description__subtitle">Сердце демонтажного робота: передовые компоненты мировых лидеров</h3>
-                    <div class="robots-description__main-text">
-                        <div class="robots-description__ferst-text">
-                            <p>Наши демонтажные роботы оснащены передовыми компонентами от мировых лидеров <strong>(ABB, Sauer Automation, Schneider, Walvoil, NACHI-FUJIKOSHICORP, SB/EPIROC)</strong>, что обеспечивает:</p>
-                            <ul>
-                                <li>Высокую производительность: Оптимизированные для тяжелых условий работы компоненты обеспечивают максимальную эффективность.</li>
-                                <li>Надежность: Проверенные временем компоненты гарантируют бесперебойную работу.</li>
-                                <li>Долговечность: Высококачественные материалы и сборка обеспечивают длительный срок службы.</li>
-                            </ul>
-                        </div>
-                        <div class="robots-description__second-text">
-                            <p>Выбор компонентов основан на тщательном анализе их технических характеристик и совместимости. Это позволяет создавать роботов, отвечающие самым высоким требованиям в области производительности, безопасности и надежности. Преимущества использования компонентов от мировых лидеров:</p>
-                            <ul>
-                                <li>Максимальная эффективность</li>
-                                <li>Бесперебойная работа</li>
-                                <li>Длительный срок службы</li>
-                                <li>Оперативное обслуживание</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="robots-description__last-text">В итоге, наши демонтажные роботы являются одними из самых надежных и эффективных на рынке.</p>
-                </div>
-                <div class="catalog-robots__image-wrapper robots-image">
-                    <img class="robots-image__main-image" src="./images/catalog/details_foto_1_mobile@2x.webp" alt="фотограция поршней">
-                    <div class="robots-image__sub-images-wrapper">
-                        <img class="robots-image__sub-image" src="./images/catalog/details_foto_2_mobile@2x.webp" alt="фотограция стояк после покраски">
-                        <img class="robots-image__sub-image" src="./images/catalog/details_foto_3_mobile@2x.webp" alt="фотография ходовой в разборе">
-                    </div>
-                </div>
-                <div class="catalog-robots__robots-wrapper robots-card">
-
-                </div>
-            </section>
         </main>
         <footer class="footer">
             <div class="footer__wrapper--lines">
@@ -234,7 +216,7 @@
                                             <span class="visually-hidden">whatsapp</span>
                                             <img
                                                 class="social-list__icon"
-                                                src="./images/whatsapp_icon.svg"
+                                                src="./../../images/whatsapp_icon.svg"
                                                 alt=""
                                                 width="45"
                                                 height="45"
@@ -245,7 +227,7 @@
                                         <a class="social-list__link link social-list__link--telegram" href="https://t.me/brunt_oleg" target="_blank">
                                             <span class="visually-hidden">telegram</span>
                                             <svg width="45" height="45" class="social-list__icon social-list__icon">
-                                                <use href="./images/icons/stack.svg#telegram_icon"></use>
+                                                <use href="./../../images/icons/stack.svg#telegram_icon"></use>
                                             </svg>
                                         </a>
                                     </li>

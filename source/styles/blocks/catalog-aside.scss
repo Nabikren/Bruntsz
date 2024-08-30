@@ -1,4 +1,4 @@
-.robots-aside {
+.catalog-aside {
   &__title {
     margin-bottom: 10px;
     font-size: 16px;
@@ -18,6 +18,10 @@
 
     &--current {
       border: 1px solid $blue-18A0FB;
+
+      .link {
+        color: $black;
+      }
     }
   }
 

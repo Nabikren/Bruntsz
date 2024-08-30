@@ -32,11 +32,14 @@
 @import "./blocks/form.scss";
 @import "./blocks/separator.scss";
 @import "./blocks/catalog-header.scss";
-@import "./blocks/robots-aside.scss";
+@import "./blocks/catalog-aside.scss"; //aside в каталоге
 @import "./blocks/catalog-robots.scss";
-@import "./blocks/robots-image.scss";
+@import "./blocks/robots-image.scss"; //блок вправа в котологе
 @import "./blocks/robots-description.scss";
 @import "./blocks/swiper-card.scss";
 @import "./blocks/form-catalog.scss";
 @import "./blocks/molots.scss";
+@import "./blocks/breadcrumbs.scss"; //хлебные крошки во всех каталогах
 @import "./blocks/hammer.scss";
+@import "./blocks/dropdown.scss";
+@import "./blocks/catalog-template.scss"; //каталог в шаблоне
