@@ -13,21 +13,20 @@
 
   &__list {
     @media screen and (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 25px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 25px;
+      align-items: flex-start;
     }
   }
 
   &__item {
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
-    margin-bottom: 25px;
-    padding: 7px;
+    padding: 20px;
+    height: auto;
 
     @media screen and (min-width: $tablet-width) {
-      flex: 1 1 calc(50% - 20px); /* Для планшетов и больше */
       max-width: 600px;
       min-width: 355px;
     }
@@ -38,26 +37,11 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-  }
+    max-width: 100%;
+    min-height: 100px;
 
-  &__button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease-out;
-
-    &--opened {
-      transform: rotate(90deg);
+    svg {
+      margin-left: 10%;
     }
-  }
-
-  &__answer-wrapper {
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
   }
 }

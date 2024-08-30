@@ -1,11 +1,16 @@
 import { toggleMenu } from './modules/burger.js';
 import { initDropdown } from './modules/dropdown.js';
-import { renderRobotsCards } from './modules/robots-card.js';
+import { renderRobotsCards } from './modules/swiper-card.js';
+import { swiperSimilarInit } from './modules/swiper.js';
+// import { validation } from './modules/validation.js';
+import { replaceAllPaths } from './functions/replace-all-paths.js';
+
 
 toggleMenu();
 initDropdown();
-
-//запускаем robots-card.js чтобы аоявились карточки роботов
+swiperSimilarInit('.swiper-robots', 4);
+replaceAllPaths();
+// validation();
 
 const container = document.querySelector('.robots-card');
 if (container !== null) {
