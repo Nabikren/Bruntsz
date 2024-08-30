@@ -33,4 +33,5 @@ export function swiperSimilarInit(el, countSlides) {
       },
     }
   });
+
 }
