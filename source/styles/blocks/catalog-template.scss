@@ -144,15 +144,23 @@
       grid-column: 1 / -1;
       margin: 0;
       order: -1;
+      margin-bottom: 20px;
 
       @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
         order: none;
       }
     }
   }
 
   &__description {
+    @media screen and (min-width: $desktop) {
+      padding-inline: 20px;
+    }
 
+    @media screen and (min-width: $desktop-width) {
+      padding-inline: 40px;
+    }
   }
 
   &__presentation {
@@ -181,6 +189,9 @@
 
     @media screen and (min-width: $desktop) {
       display: grid;
+      grid-template-columns: 1fr; // Устанавливаем одну колонку на десктопе
+      grid-auto-rows: auto; // Автоматически рассчитываем высоту строк
+      gap: 20px; // Добавляем зазор между изображениями
     }
 
     img {
@@ -192,7 +203,7 @@
         justify-self: center;
 
         @media screen and (min-width: $tablet-width) {
-          grid-column: 1/4;
+          grid-column: 1/5;
         }
 
         @media screen and (min-width: $desktop) {
@@ -201,10 +212,10 @@
       }
 
       &:nth-of-type(2) {
-        grid-column: 1/5;
+        grid-column: span 6;
 
         @media screen and (min-width: $tablet-width) {
-          grid-column: 4/8;
+          grid-column: 5/9;
         }
 
         @media screen and (min-width: $desktop) {
@@ -214,16 +225,17 @@
       }
 
       &:nth-of-type(3) {
-        grid-column: 5/-1;
+        grid-column: span 6;
         height: 100%;
         object-fit: cover;
 
         @media screen and (min-width: $tablet-width) {
-          grid-column: 8/13;
+          grid-column: 9/13;
         }
 
         @media screen and (min-width: $desktop) {
           grid-column: 1/-1;
+          justify-self: center;
         }
       }
 
