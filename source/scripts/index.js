@@ -9,6 +9,7 @@ import { replaceAllPaths } from './functions/replace-all-paths.js';
 toggleMenu();
 initDropdown();
 // swiperSimilarInit('.robots', 4);
+swiperSimilarInit('.swiper-robots', 4);
 replaceAllPaths();
 // validation();
 
