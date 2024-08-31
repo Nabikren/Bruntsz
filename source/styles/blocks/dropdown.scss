@@ -5,7 +5,11 @@
     align-items: center;
     text-decoration: none;
     color: $black;
-    max-width: 50%;
+    width: 355px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 460px;
+    }
 
     svg {
       transform: rotate(270deg);
