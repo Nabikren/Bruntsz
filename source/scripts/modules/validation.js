@@ -1,8 +1,10 @@
-import { checkName } from "./validation/name.js";
+import { checkInput } from "./validation/functions/checkInput.js";
+import { formElements } from './validation/constants.js';
+
+const { userNameInput, userPhoneInput } = formElements;
+
 
 export function validation() {
-  checkName();
-  // form.addEventListener('submit', (e) => {
-  //   e.preventDefault();
-  // })
+  checkInput(userNameInput, 'username');
+  checkInput(userPhoneInput, 'userphone');
 }

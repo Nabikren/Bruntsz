@@ -10,7 +10,7 @@ initDropdown();
 // swiperSimilarInit('.robots', 4);
 swiperSimilarInit('.swiper-robots', 4);
 swiperThumbs();
-// validation();
+validation();
 
 const container = document.querySelector('.robots-card');
 if (container !== null) {

@@ -143,11 +143,29 @@ img {
 
 .invalid {
   border: 2px solid red;
+  outline: none;
+
+  &:focus {
+    border: 2px solid red;
+  }
+
+  &:focus-visible {
+    border: 2px solid red;
+  }
 }
 
 .valid {
   border: 2px solid greenyellow;
   position: relative;
+  outline: none;
+
+  &:focus {
+    border: 2px solid greenyellow;
+  }
+
+  &:focus-visible {
+    border: 2px solid greenyellow;
+  }
 }
 
 .valid-class {
@@ -187,9 +205,6 @@ img {
   background-color: rgba(0, 29, 158, 0.5);
   border-radius: 5px;
   padding: 10px;
-  // position: absolute;
-  // bottom: -50px;
-  // margin: 0;
 }
 
 .red-text {
