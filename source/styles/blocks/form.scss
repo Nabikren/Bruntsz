@@ -148,5 +148,18 @@
       min-width: 355px;
       margin-right: 0;
     }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: auto !important;
+
+      &:hover {
+        opacity: 0.3;
+        background-color: $white;
+        color: $blue-088DE6;
+
+        pointer-events: none;
+      }
+    }
   }
 }

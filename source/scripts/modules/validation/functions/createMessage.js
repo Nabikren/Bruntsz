@@ -13,6 +13,9 @@ export function checkMessage(input, name, text, status) {
     case 'userphone':
       createMessage(input, text, status);
       break;
+    case 'useremail':
+      createMessage(input, text, status);
+      break;
   }
 }
 

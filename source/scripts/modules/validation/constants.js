@@ -8,6 +8,8 @@ export const formElements = (() => {
     userCompanyInput: form.querySelector('#usercompany'),
     userCommentsTextArea: form.querySelector('#usercomments'),
     inputs: form.querySelectorAll('input'),
+    hiddenInput: form.querySelector('#hiddenFormInput'),
+    buttonSubmit: form.querySelector("button[type='submit']")
   };
 })();
 
@@ -49,6 +51,15 @@ export const messages = {
       error: 'введите полный номер телефона',
       success: 'телефон верный',
     }
+  },
+  useremail: {
+    empty: {
+      error: 'введите полный адрес',
+    },
+    format: {
+      error: 'ожидаемый формат myemail@gmail.com',
+      success: 'адрес верный',
+    }
   }
 }
 
@@ -56,6 +67,11 @@ export const regexps = {
   name: {
     default: /^[А-Яа-яЁё]+( [А-Яа-яЁё]+)?( [А-Яа-яЁё]+)?$/,
     symbols: /[!@#$%^&*(),.?":;№{}|<>\"' ]/,
+    numbers: /\d/
+  },
+  email: {
+    format: /^[A-Za-z0-9._%+-]+@.+\.[A-Za-z]+$/,
+    symbols: /[!#$%^&*(),.?":;№{}|<>\"' ]/,
     numbers: /\d/
   }
 }
