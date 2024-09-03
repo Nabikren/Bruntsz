@@ -176,6 +176,13 @@
       grid-column: 1 / -2;
       margin: 0;
     }
+
+    ul {
+      grid-column: 1 / -2;
+      margin: 0;
+      margin-bottom: 10px;
+      padding-left: 30px;
+    }
   }
 
   &__description {

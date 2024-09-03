@@ -61,18 +61,20 @@
             crossorigin="anonymous"
         >
         <link rel="stylesheet" href="/styles/styles.css">
-        <link rel="icon" href="/favicon.ico">
-        <link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="/favicons/180.png">
+        <!-- <link rel="stylesheet" href="./../../styles/vendor/swiper.bundle.min.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicons/180.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <script src="/scripts/index.js" defer></script>
+        <script src="./../../../scripts/index.js" defer></script>
     </head>
     <body class="page__body">
         <header class="header section">
             <div class="header__wrapper container">
                 <a class="logo" href="index.html">
                     <svg width="120" height="80">
-                        <use href="images/icons/stack.svg#logo_black"></use>
+                        <use href="/images/icons/stack.svg#logo_black"></use>
                     </svg>
                 </a>
                 <button type="button" class="button open-menu" id="menu-button">
@@ -85,10 +87,10 @@
                     <nav class="nav">
                         <ul class="nav__list list-style-none">
                             <li>
-                                <a class="link " href="index.html" aria-current="index">Главная</a>
+                                <a class="link current" href="index.html" aria-current="index">Главная</a>
                             </li>
                             <li>
-                                <a class="link current" aria-label="current-page">Навесное оборудование</a>
+                                <a class="link" href="catalog-amout.html">Навесное оборудование</a>
                             </li>
                             <li>
                                 <a class="link" href="catalog-robots.html">Демонтажные роботы</a>
@@ -107,13 +109,13 @@
                             <a class="button primary-button" href="tel:+79516484842">
                                 Позвонить
                                 <svg width="20" height="50">
-                                    <use href="images/icons/stack.svg#phone_icon"></use>
+                                    <use href="./images/icons/stack.svg#phone_icon"></use>
                                 </svg>
                             </a>
                         </div>
                         <a class="link menu__email" href="mailto:brunt-sz@mail.ru">
                             <svg width="20" height="50">
-                                <use href="images/icons/stack.svg#email_icon"></use>
+                                <use href="./images/icons/stack.svg#email_icon"></use>
                             </svg>
                             brunt-sz@mail.ru
                         </a>
@@ -122,65 +124,41 @@
             </div>
         </header>
         <main class="main">
-            <section class="section molots hammer">
+            <section class="section catalog">
                 <div class="container">
-                    <div class="molots__wrapper">
-                        <div class="molots__heading">
+                    <div class="catalog__wrapper">
+                        <div class="catalog__heading">
                             <h2 class="secondary-title">Каталог</h2>
-                            <ol class="molots__breadcrumbs list-style-none">
+                            <ol class="catalog__breadcrumbs list-style-none">
                                 <li>
-                                    <a class="base-text-form" href="">Навесное оборудование</a>
+                                    <a class="base-text-form" href="/catalog-robots.html">Демонтажные роботы</a>
                                 </li>
                                 <li>
-                                    <a class="base-text-form" href="">Молоты ANRUI</a>
-                                </li>
-                                <li>
-                                    <a class="base-text-form" href="">AR45</a>
+                                    <a class="base-text-form" href="">B-D 300</a>
                                 </li>
                             </ol>
                         </div>
-                        <div class=" molots__content">
-                            <div class="molots__nav">
-                                <p class="base-text-form">Модель</p>
-                                <ul class="molots__list list-style-none">
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-45.html">AR45</a>
+                        <div class="catalog__content">
+                            <div class="catalog__aside catalog-aside">
+                                <a href="" class="catalog-aside__title base-text-form ">Модель</a>
+                                <ul class="catalog-aside__list list-style-none">
+                                    <li class="catalog-aside__item">
+                                        <a class="base-text-form catalog-aside__link" href="/pages/robots/B-D170.html">B-D 170</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-53.html">AR53</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="base-text-form catalog-aside__link" href="/pages/robots/B-D200.html">B-D 200</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-68.html">AR68</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="base-text-form catalog-aside__link" href="">B-D 300</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-75.html">AR75</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-85.html">AR85</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-100.html">AR100</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-140.html">AR140</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-155.html">AR155</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-175.html">AR175</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-20f.html">AR20F</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-40f.html">AR40F</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="base-text-form catalog-aside__link" href="/pages/robots/B-D500.html">B-D 500</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="molots__info-wrapper">
-                                <h3 class="secondary-title">Молот AR45</h3>
-                                <!-- <div class="catalog__images-wrapper gallery-main-wrapper">
+                            <div class="catalog__info-wrapper">
+                                <h3 class="secondary-title">B-D 300</h3>
+                                <div class="catalog__images-wrapper gallery-main-wrapper">
                                     <div class="gallery-container">
                                         <div class="swiper-container gallery-main">
                                             <div class="swiper-wrapper">
@@ -191,13 +169,13 @@
                                                     <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 02">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide3/600/300" alt="Slide 03">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 03">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide4/600/300" alt="Slide 04">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 04">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide5/600/300" alt="Slide 05">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 05">
                                                 </div>
                                             </div>
                                             <div class="swiper-button-prev"></div>
@@ -212,47 +190,86 @@
                                                     <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 02">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide3/115/100" alt="Slide 03">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 03">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide4/115/100" alt="Slide 04">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 04">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="https://picsum.photos/seed/slide5/115/100" alt="Slide 05">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 05">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="catalog__text-wrapper">
-                                    <p>Гидравлический молот AR45 прекрасно подходит для работы в ограниченном пространстве: в помещениях, вдоль стен, в узких траншеях и т.п.</p>
+                                    <h3 class="blue-text"> ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ B-D 300</h3>
+                                    <p>Модель B-D 300, отличный продукт в семействе B-D, с превосходными техническими возможностями и высокой надёжностью. Широко используется в строительстве, демонтаже зданий и металлургической промышленности. При проектировании серии моделей B-D основными факторами являются, безопасность, точность и высокая эффективность работы. Дистанционное управление и технология точного контроля позволяют операторам находиться вдали от опасных зон.</p>
+
+                                    <h3 class="blue-text">СТАНДАРТНАЯ КОМПЛЕКТАЦИЯ:</h3>
+                                    <p>Молот: SB452</p>
+                                    <p>Электромотор: ABB</p>
+                                    <p>Главный клапан: Walvoil</p>
+                                    <p>Гидравлический насос: Casappa</p>
+                                    <p>Поворотный мотор: Nachi</p>
+                                    <p>Редуктора хода: Nachi</p>
+                                    <p>Электрическая часть управления: Sauer, Weidmuller, ABB, Schneider.</p>
+                                    <p>Пульт дистанционного управления</p>
+                                    <p>Ковш: 80л</p>
+                                    <p>Кабель: 25м</p>
+                                    <p>Защита 3-ох гидравлических целинтров</p>
+                                    <p>Дополнительный съемный противовес</p>
 
                                     <h3 class="blue-text">ХАРАКТЕРИСТИКИ МОЛОТА:</h3>
-                                    <p>Рабочий вес:</p>
-                                    <ul>
-                                        <li>Усиленный корпус: 137 кг</li>
-                                        <li>Усиленые стенки: 105 кг.</li>
-                                        <li>Усиленная передняя часть: 118 кг</li>
-                                    </ul>
-                                    <p>Габариты:</p>
-                                    <ul>
-                                        <li>Ширина: 210 мм</li>
-                                        <li>Высота: 443 мм</li>
-                                        <li>Длинна:  748 мм</li>
-                                        <li>Длинна с рабочим инструментом: 1098 мм</li>
-                                    </ul>
-                                    <p>Расход масла: 20-40 л/мин</p>
-                                    <p>Рабочее давление: 90-120 бар</p>
-                                    <p>Частота ударов: 700-1200 уд/мин</p>
-                                    <p>Диаметр рабочего инструмента: 45 мм</p>
-                                    <p>Энергия удара: 250 Дж</p>
-                                    <p>Масса базовой машины: 0,8-1,5 т</p>
-                                    <h3 class="blue-text">Область применения:</h3>
+                                    <p>Рабочий вес: 440 кг</p>
+                                    <p>Расход масла: 55-100 л/мин</p>
+                                    <p>Рабочее давление: 100-150 бар</p>
+                                    <p>Частота ударов: 550-1250 уд/мин</p>
+                                    <p>Диаметр рабочего инструмента: 95 мм</p>
+                                    <p>Рабочая длина инструмента: 470 мм</p>
+                                    <p>Макс. входная гидравлическая мощность: 25 кВт</p>
+                                    <p>Гарантированный уровень звуковой мощности: 122 дБ</p>
+                                    <p>Уровень звукового давления: 94 дБ</p>
+
+                                    <h3 class="blue-text">ВЕС РОБОТА:</h3>
+                                    <p>Без навесного оборудования: 3950 кг</p>
+                                    <p>Рекомендованный вес навесного оборудования: 530 кг</p>
+                                    <p>Уровень шума: 100 дБ (стандарт ЕС 2000/14/EC)</p>
+
+                                    <h3 class="blue-text">ГАБАРИТЫ РОБОТА:</h3>
+                                    <p>Высота транспортировки: 1535 мм</p>
+                                    <p>Ширина транспортировки: 1210 мм</p>
+                                    <p>Длина транспортировки: 3960 мм</p>
+
+                                    <h3 class="blue-text">ГИДРАВЛИЧЕСКАЯ СИСТЕМА:</h3>
+                                    <p>Емкость гидравлической системы: 98 л</p>
+                                    <p>Тип насоса: переменного объема</p>
+                                    <p>Давление в системе: 18 МПа</p>
+                                    <p>Давление, для навесного оборудования: 23 МПа</p>
+                                    <p>Производительность насоса: 110 л/мин</p>
+
+                                    <h3 class="blue-text">СИСТЕМА УПРАВЛЕНИЯ:</h3>
+                                    <p>Тип управления: портативный пульт д/у</p>
+                                    <p>Тип сигнала: цифровой</p>
+                                    <p>Режим управления: радиосвязь / кабель</p>
+                                    <p>Зона охвата радиосигнала: до 200</p>
+
+                                    <h3 class="blue-text">ПЕРЕДВИЖЕНИЕ:</h3>
+                                    <p>Скорость вращения башни: 16 сек/360°</p>
+                                    <p>Скорость движения, макс. 3,7 км/ч</p>
+                                    <p>Преодолеваемый уклон, макс. 30°</p>
+
+                                    <h3 class="blue-text">ЭЛЕКТРИЧЕСКАЯ СИСТЕМА:</h3>
+                                    <p>Электродвигатель: ABB</p>
+                                    <p>Мощность: 39 кВт</p>
+                                    <p>Сила тока: 63 А</p>
+
+                                    <h3 class=" blue-text">Область применения:</h3>
                                     <div class="molots-wrapper dropdown">
                                         <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
                                             Горнодобывающие и карьерные работы
                                             <svg width="21" height="15">
-                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                                <use href="/images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
                                             </svg>
                                         </a>
                                         <div class="molots-inner dropdown__content">
@@ -340,7 +357,7 @@
                                         <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
                                             Металлургическая промышленность
                                             <svg width="21" height="15">
-                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                                <use href="/images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
                                             </svg>
                                         </a>
                                         <div class="molots-inner  dropdown__content">
@@ -357,22 +374,10 @@
                                             </ul>
                                         </div>
                                     </div>
-
-                                </div>
-                                <div class="molots__presentation">
-                                    <div class="molots__presentation-images">
-                                        <img src="images/catalog/attachments/anrui/AR45/AR45_foto_desktop@2x.webp" alt="">
-                                        <img src="images/catalog/attachments/anrui/AR45/AR45_scheme_desktop@2x.webp" alt="">
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="section wish-products">
-                <div class="container">
-                    <h2 class="secondary-title">Подходящие роботы</h2>
                 </div>
             </section>
             <section class="section form form-catalog">
@@ -387,7 +392,7 @@
                                 <li>
                                     <div class="form-catalog__icon">
                                         <svg width="120" height="80">
-                                            <use href="images/icons/stack.svg#headphones"></use>
+                                            <use href="/images/icons/stack.svg#headphones"></use>
                                         </svg>
                                     </div>
                                     <span>Проконсультируем</span>
@@ -395,7 +400,7 @@
                                 <li>
                                     <div class="form-catalog__icon">
                                         <svg width="120" height="80">
-                                            <use href="images/icons/stack.svg#ingener"></use>
+                                            <use href="/images/icons/stack.svg#ingener"></use>
                                         </svg>
                                     </div>
                                     <span>Поможем с выбором техники, а так же с техническими вопросами</span>
@@ -403,7 +408,7 @@
                                 <li>
                                     <div class="form-catalog__icon">
                                         <svg width="120" height="80">
-                                            <use href="images/icons/stack.svg#agree"></use>
+                                            <use href="/images/icons/stack.svg#agree"></use>
                                         </svg>
                                     </div>
                                     <span>Предоставим выголное для вас предложение</span>
@@ -483,7 +488,7 @@
                     <div class="footer__wrapper container">
                         <a class="logo" href="index.html">
                             <svg width="120" height="80">
-                                <use href="images/icons/stack.svg#logo_white"></use>
+                                <use href="/images/icons/stack.svg#logo_white"></use>
                             </svg>
                         </a>
                         <div class="footer__blocks">
@@ -538,7 +543,7 @@
                                             <span class="visually-hidden">whatsapp</span>
                                             <img
                                                 class="social-list__icon"
-                                                src="images/whatsapp_icon.svg"
+                                                src="/images/whatsapp_icon.svg"
                                                 alt=""
                                                 width="45"
                                                 height="45"
@@ -549,7 +554,7 @@
                                         <a class="social-list__link link social-list__link--telegram" href="https://t.me/brunt_oleg" target="_blank">
                                             <span class="visually-hidden">telegram</span>
                                             <svg width="45" height="45" class="social-list__icon social-list__icon">
-                                                <use href="images/icons/stack.svg#telegram_icon"></use>
+                                                <use href="/images/icons/stack.svg#telegram_icon"></use>
                                             </svg>
                                         </a>
                                     </li>
