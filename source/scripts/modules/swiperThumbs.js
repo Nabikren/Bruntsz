@@ -7,7 +7,8 @@ export function swiperThumbs() {
 
   var galleryThumbs = new Swiper(galleryThumbsElement, {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 5,
+    spaceBetween: 10,
     freeMode: true,
     watchOverflow: true,
     watchSlidesVisibility: true,

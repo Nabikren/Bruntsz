@@ -12,13 +12,13 @@
     }
 
     svg {
-      transform: rotate(270deg);
+      transform: rotate(90deg);
       margin-left: auto;
       transition: 0.3s ease-in-out;
 
       &.state {
 
-        transform: rotate(90deg);
+        transform: rotate(270deg);
       }
     }
   }

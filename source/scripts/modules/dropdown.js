@@ -14,17 +14,15 @@ export const initDropdown = () => {
       const isOpen = dropdownContent.style.maxHeight;
 
       if (isOpen) {
-
         dropdownContent.style.maxHeight = null;
         dropdownContent.style.opacity = 0;
-        arrowTab.classList.add('state');
+        arrowTab.classList.remove('state');
       } else {
-
         dropdownContent.style.display = 'block';
         const contentHeight = dropdownContent.scrollHeight + 'px';
         dropdownContent.style.maxHeight = contentHeight;
         dropdownContent.style.opacity = 1;
-        arrowTab.classList.remove('state');
+        arrowTab.classList.add('state');
       }
     });
   });
