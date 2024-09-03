@@ -164,6 +164,7 @@
     h3 {
       grid-column: 1 / -2;
       margin-top: 40px;
+      text-transform: uppercase;
 
       @media screen and (min-width: $desktop) {
         margin-top: 80px;
