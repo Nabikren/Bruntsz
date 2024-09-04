@@ -4,11 +4,13 @@ import { renderRobotsCards } from './modules/swiper-card.js';
 import { swiperSimilarInit } from './modules/swiper.js';
 import { swiperThumbs } from './modules/swiperThumbs.js';
 import { validation } from './modules/validation.js';
+import { playVideo } from './modules/videoplayer/video.js';
 
 toggleMenu();
 initDropdown();
 swiperThumbs();
 validation();
+playVideo()();
 
 const container = document.querySelector('.robots-card');
 if (container !== null) {

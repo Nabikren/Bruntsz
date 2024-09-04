@@ -39,14 +39,16 @@
   }
 
   &__video {
-    max-width: 345px;
-    height: auto;
+    max-width: 700px;
+    height: 400px;
     margin: auto;
+    object-fit: cover;
 
     @media screen and (min-width: $tablet-width) {
       min-width: 345px;
       max-width: 550px;
       margin: auto;
+      height: 300px;
     }
   }
 
@@ -74,6 +76,22 @@
       border-bottom: 10px solid $white;
       clip-path: polygon(50% 0, 0 70%, 100% 70%);
       transform: rotate(90deg);
+    }
+
+    &.pause {
+      opacity: 0.5;
+
+      &::after {
+        clip-path: none;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./../../images/icons/pause.svg');
+        transform: rotate(0deg);
+
+      }
     }
   }
 
