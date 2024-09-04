@@ -7,12 +7,22 @@ import { validation } from './modules/validation.js';
 
 toggleMenu();
 initDropdown();
-// swiperSimilarInit('.robots', 4);
-swiperSimilarInit('.swiper-robots', 4);
 swiperThumbs();
 validation();
 
 const container = document.querySelector('.robots-card');
 if (container !== null) {
   renderRobotsCards(container);
+}
+
+const swiperRobots = document.querySelector('.swiper-robots');
+if (swiperRobots !== null) {
+  renderRobotsCards(swiperRobots, 'robots');
+  swiperSimilarInit(swiperRobots, 4);
+}
+
+const swiperHammers = document.querySelector('.swiper-hammers');
+if (swiperHammers !== null) {
+  renderRobotsCards(swiperHammers, 'hammers');
+  swiperSimilarInit(swiperHammers, 4);
 }
