@@ -72,7 +72,7 @@
             <div class="header__wrapper container">
                 <a class="logo" href="index.html">
                     <svg width="120" height="80">
-                        <use href="images/icons/stack.svg#logo_black"></use>
+                        <use href="/images/icons/stack.svg#logo_black"></use>
                     </svg>
                 </a>
                 <button type="button" class="button open-menu" id="menu-button">
@@ -85,10 +85,10 @@
                     <nav class="nav">
                         <ul class="nav__list list-style-none">
                             <li>
-                                <a class="link " href="index.html" aria-current="index">Главная</a>
+                                <a class="link current" href="index.html" aria-current="index">Главная</a>
                             </li>
                             <li>
-                                <a class="link current" aria-label="current-page">Навесное оборудование</a>
+                                <a class="link" href="catalog-amout.html">Навесное оборудование</a>
                             </li>
                             <li>
                                 <a class="link" href="catalog-robots.html">Демонтажные роботы</a>
@@ -107,13 +107,13 @@
                             <a class="button primary-button" href="tel:+79516484842">
                                 Позвонить
                                 <svg width="20" height="50">
-                                    <use href="images/icons/stack.svg#phone_icon"></use>
+                                    <use href="./images/icons/stack.svg#phone_icon"></use>
                                 </svg>
                             </a>
                         </div>
                         <a class="link menu__email" href="mailto:brunt-sz@mail.ru">
                             <svg width="20" height="50">
-                                <use href="images/icons/stack.svg#email_icon"></use>
+                                <use href="./images/icons/stack.svg#email_icon"></use>
                             </svg>
                             brunt-sz@mail.ru
                         </a>
@@ -180,137 +180,184 @@
                             </div>
                             <div class="molots__info-wrapper">
                                 <h3 class="secondary-title">Молот AR45</h3>
-                                <div class="molots__description">
-                                    <p>Гидравлический молот AR45 прекрасно подходит для работы в ограниченном пространстве: в помещениях, вдоль стен, в узких траншеях и т.п.</p>
-                                    <div class="molots__info">
-                                        <h3 class="secondary-title blue-text">ХАРАКТЕРИСТИКИ МОЛОТА:</h3>
-                                        <p>Рабочий вес:</p>
-                                        <ul>
-                                            <li>Усиленный корпус: 137 кг</li>
-                                            <li>Усиленые стенки: 105 кг.</li>
-                                            <li>Усиленная передняя часть: 118 кг</li>
-                                        </ul>
-                                        <p>
-                                            Габариты:
-                                            <a href="">схема</a>
-                                        </p>
-                                        <p>Расход масла: 20-40 л/мин</p>
-                                        <p>Рабочее давление: 90-120 бар</p>
-                                        <p>Частота ударов: 700-1200 уд/мин</p>
-                                        <p>Диаметр рабочего инструмента: 45 мм</p>
-                                        <p>Энергия удара: 250 Дж</p>
-                                        <p>Масса базовой машины: 0,8-1,5 т</p>
-                                        <h3 class="secondary-title blue-text">Область применения:</h3>
-                                        <div class="molots-wrapper dropdown">
-                                            <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
-                                                Горнодобывающие и карьерные работы
-                                                <svg width="21" height="15">
-                                                    <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="molots-inner dropdown__content">
-                                                <p>Подготовительные работы</p>
-                                                <ul>
-                                                    <li>Удаление покрывающего слоя</li>
-                                                    <li>Выравнивание рабочих площадок, путей и платформ</li>
-                                                    <li>Оборка кровли, забоя и краев</li>
-                                                </ul>
-                                                <p>Дробление негабарита</p>
-                                                <ul>
-                                                    <li>Дробление материала в куче</li>
-                                                    <li>Удаление материала, блокирующего систему измельчения</li>
-                                                </ul>
+                                <div class="catalog__images-wrapper gallery-main-wrapper">
+                                    <div class="gallery-container">
+                                        <div class="swiper-container gallery-main">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_desktop@2x.webp" alt="Slide 01">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 02">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_desktop@2x.webp" alt="Slide 03">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 04">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_desktop@2x.webp" alt="Slide 05">
+                                                </div>
                                             </div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
                                         </div>
-                                        <div class="molots-wrapper dropdown">
-                                            <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
-                                                Разборка и реконструкция
-                                                <svg width="21" height="15">
-                                                    <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="molots-inner dropdown__content">
-                                                <p>Каменные конструкции</p>
-                                                <ul>
-                                                    <li>Кирпичная кладка</li>
-                                                    <li>Природный камень</li>
-                                                    <li>Газобетон</li>
-                                                </ul>
-                                                <p>Бетонные конструкции</p>
-                                                <ul>
-                                                    <li>Легкий бетон</li>
-                                                    <li>Стандартный бетон</li>
-                                                    <li>Тяжелый бетон</li>
-                                                </ul>
-                                                <p>Комбинированные стальные и бетонные конструкции</p>
-                                                <ul>
-                                                    <li>Бетон, армированный сталью</li>
-                                                    <li>Предварительно напряженный бетон</li>
-                                                    <li>Бетон, армированный волокном</li>
-                                                </ul>
-                                                <p>Дорожное покрытие</p>
-                                                <ul>
-                                                    <li>Асфальт</li>
-                                                    <li>Бетон</li>
-                                                    <li>Комбинированные покрытия</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="molots-wrapper dropdown">
-                                            <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
-                                                Строительство
-                                                <svg width="21" height="15">
-                                                    <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="molots-inner  dropdown__content">
-                                                <p>Земляные работы</p>
-                                                <ul>
-                                                    <li>Рытье траншей</li>
-                                                    <li>Строительство шахт</li>
-                                                    <li>Извлечение грунта</li>
-                                                </ul>
-                                                <p>Прокладка туннелей</p>
-                                                <ul>
-                                                    <li>Проходка туннеля</li>
-                                                    <li>Оборка кровли, забоя и краев</li>
-                                                    <li>Выравнивание поверхности</li>
-                                                </ul>
-                                                <p>Дноуглубительные работы</p>
-                                                <ul>
-                                                    <li>Углубление и расширение каналов</li>
-                                                    <li>Углубление и расширение доков</li>
-                                                </ul>
-                                                <p>Озеленение и ландшафтный дизайн</p>
-                                                <ul>
-                                                    <li>Установка ограждений</li>
-                                                    <li>Извлечение грунта</li>
-                                                    <li>Разрушение породы</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="molots-wrapper dropdown">
-                                            <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
-                                                Металлургическая промышленность
-                                                <svg width="21" height="15">
-                                                    <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="molots-inner  dropdown__content">
-                                                <p>Удаление и утилизация шлака</p>
-                                                <ul>
-                                                    <li>Дробление негабарита на отвале шлака</li>
-                                                    <li>Удаление материала, блокирующего систему измельчения</li>
-                                                </ul>
-                                                <p>Очистка и удаление футеровки</p>
-                                                <ul>
-                                                    <li>Ковши</li>
-                                                    <li>Горловины конверторов</li>
-                                                    <li>Печи</li>
-                                                </ul>
+                                        <div class="swiper-container gallery-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_mobile@2x.webp" alt="Slide 01">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 02">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_mobile@2x.webp" alt="Slide 03">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/catalog/robots/170/robot_170_foto_desktop_2@1x.webp" alt="Slide 04">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/images/robot_hero_mobile@2x.webp" alt="Slide 05">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="catalog__text-wrapper">
+                                    <p>Гидравлический молот AR45 прекрасно подходит для работы в ограниченном пространстве: в помещениях, вдоль стен, в узких траншеях и т.п.</p>
+
+                                    <h3 class="blue-text">ХАРАКТЕРИСТИКИ МОЛОТА:</h3>
+                                    <p>Рабочий вес:</p>
+                                    <ul>
+                                        <li>Усиленный корпус: 137 кг</li>
+                                        <li>Усиленые стенки: 105 кг.</li>
+                                        <li>Усиленная передняя часть: 118 кг</li>
+                                    </ul>
+                                    <p>Габариты:</p>
+                                    <ul>
+                                        <li>Ширина: 210 мм</li>
+                                        <li>Высота: 443 мм</li>
+                                        <li>Длинна:  748 мм</li>
+                                        <li>Длинна с рабочим инструментом: 1098 мм</li>
+                                    </ul>
+                                    <p>Расход масла: 20-40 л/мин</p>
+                                    <p>Рабочее давление: 90-120 бар</p>
+                                    <p>Частота ударов: 700-1200 уд/мин</p>
+                                    <p>Диаметр рабочего инструмента: 45 мм</p>
+                                    <p>Энергия удара: 250 Дж</p>
+                                    <p>Масса базовой машины: 0,8-1,5 т</p>
+                                    <h3 class="blue-text">Область применения:</h3>
+                                    <div class="molots-wrapper dropdown">
+                                        <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
+                                            Горнодобывающие и карьерные работы
+                                            <svg width="21" height="15">
+                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="molots-inner dropdown__content">
+                                            <p>Подготовительные работы</p>
+                                            <ul>
+                                                <li>Удаление покрывающего слоя</li>
+                                                <li>Выравнивание рабочих площадок, путей и платформ</li>
+                                                <li>Оборка кровли, забоя и краев</li>
+                                            </ul>
+                                            <p>Дробление негабарита</p>
+                                            <ul>
+                                                <li>Дробление материала в куче</li>
+                                                <li>Удаление материала, блокирующего систему измельчения</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="molots-wrapper dropdown">
+                                        <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
+                                            Разборка и реконструкция
+                                            <svg width="21" height="15">
+                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="molots-inner dropdown__content">
+                                            <p>Каменные конструкции</p>
+                                            <ul>
+                                                <li>Кирпичная кладка</li>
+                                                <li>Природный камень</li>
+                                                <li>Газобетон</li>
+                                            </ul>
+                                            <p>Бетонные конструкции</p>
+                                            <ul>
+                                                <li>Легкий бетон</li>
+                                                <li>Стандартный бетон</li>
+                                                <li>Тяжелый бетон</li>
+                                            </ul>
+                                            <p>Комбинированные стальные и бетонные конструкции</p>
+                                            <ul>
+                                                <li>Бетон, армированный сталью</li>
+                                                <li>Предварительно напряженный бетон</li>
+                                                <li>Бетон, армированный волокном</li>
+                                            </ul>
+                                            <p>Дорожное покрытие</p>
+                                            <ul>
+                                                <li>Асфальт</li>
+                                                <li>Бетон</li>
+                                                <li>Комбинированные покрытия</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="molots-wrapper dropdown">
+                                        <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
+                                            Строительство
+                                            <svg width="21" height="15">
+                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="molots-inner  dropdown__content">
+                                            <p>Земляные работы</p>
+                                            <ul>
+                                                <li>Рытье траншей</li>
+                                                <li>Строительство шахт</li>
+                                                <li>Извлечение грунта</li>
+                                            </ul>
+                                            <p>Прокладка туннелей</p>
+                                            <ul>
+                                                <li>Проходка туннеля</li>
+                                                <li>Оборка кровли, забоя и краев</li>
+                                                <li>Выравнивание поверхности</li>
+                                            </ul>
+                                            <p>Дноуглубительные работы</p>
+                                            <ul>
+                                                <li>Углубление и расширение каналов</li>
+                                                <li>Углубление и расширение доков</li>
+                                            </ul>
+                                            <p>Озеленение и ландшафтный дизайн</p>
+                                            <ul>
+                                                <li>Установка ограждений</li>
+                                                <li>Извлечение грунта</li>
+                                                <li>Разрушение породы</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="molots-wrapper dropdown">
+                                        <a class="dropdown__tab" href="#" aria-label="Раскрыть список">
+                                            Металлургическая промышленность
+                                            <svg width="21" height="15">
+                                                <use href="images/icons/stack.svg#breadcrumbs_arrow_icom"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="molots-inner  dropdown__content">
+                                            <p>Удаление и утилизация шлака</p>
+                                            <ul>
+                                                <li>Дробление негабарита на отвале шлака</li>
+                                                <li>Удаление материала, блокирующего систему измельчения</li>
+                                            </ul>
+                                            <p>Очистка и удаление футеровки</p>
+                                            <ul>
+                                                <li>Ковши</li>
+                                                <li>Горловины конверторов</li>
+                                                <li>Печи</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="molots__presentation">
                                     <div class="molots__presentation-images">
