@@ -16,6 +16,9 @@ export function checkMessage(input, name, text, status) {
     case 'useremail':
       createMessage(input, text, status);
       break;
+    case 'usercompany':
+      createMessage(input, text, status);
+      break;
   }
 }
 

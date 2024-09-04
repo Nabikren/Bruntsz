@@ -163,3 +163,9 @@
     }
   }
 }
+
+#hiddenFormInput {
+  position: absolute;
+  z-index: -1000;
+  opacity: 0;
+}

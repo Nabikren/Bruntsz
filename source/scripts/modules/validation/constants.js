@@ -60,6 +60,20 @@ export const messages = {
       error: 'ожидаемый формат myemail@gmail.com',
       success: 'адрес верный',
     }
+  },
+  usercompany: {
+    empty: {
+      error: 'введите полное название',
+      success: 'название верное',
+    },
+    numbers: {
+      error: 'не должно быть цифр',
+      success: 'название верное',
+    },
+    symbols: {
+      error: 'не должно быть спец.символов (@, %, $ ...)',
+      success: 'название верное',
+    },
   }
 }
 
@@ -73,5 +87,9 @@ export const regexps = {
     format: /^[A-Za-z0-9._%+-]+@.+\.[A-Za-z]+$/,
     symbols: /[!#$%^&*(),.?":;№{}|<>\"' ]/,
     numbers: /\d/
+  },
+  company: {
+    numbers: /\d/,
+    symbols: /[!@#$%^&*(),.?":;№{}|<>\"' ]/,
   }
 }
