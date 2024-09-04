@@ -10,10 +10,8 @@ export function checkPhone(input, name, userphone, regex, value) {
     const digitsOnly = value.replace(/\D/g, '');
     if (digitsOnly.length < 11) {
       checkMessage(input, name, userphone.empty.error, 'error');
-      return false;
     } else {
       checkMessage(input, name, userphone.empty.success, 'success');
-      return true;
     }
   }
 }
