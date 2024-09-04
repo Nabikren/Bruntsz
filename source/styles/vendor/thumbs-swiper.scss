@@ -32,7 +32,7 @@
     img {
       transition: 0.3s;
       object-fit: contain;
-      // height: 100%;
+      height: 100%;
       width: 100%;
     }
   }
@@ -70,11 +70,7 @@
   height: 100%;
 
   @media screen and (min-width: $tablet-width) {
-<<<<<<< HEAD
-
-=======
     width: 20%;
->>>>>>> 7a24398c00538919c0eb1ce2891c5081714c9f33
   }
 
   .swiper-slide {
