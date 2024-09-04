@@ -1,14 +1,15 @@
 .gallery-container {
   position: relative;
-  // width: 730px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   flex-direction: column;
+  gap: 20px;
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
+    height: 480px;
   }
 }
 
@@ -63,13 +64,17 @@
 
 .gallery-thumbs {
   order: -1;
-  width: 135px;
+  width: 100%;
   padding-left: 15px;
   padding-top: 10px;
-  height: 100px;
+  height: 100%;
 
   @media screen and (min-width: $tablet-width) {
+<<<<<<< HEAD
 
+=======
+    width: 20%;
+>>>>>>> 7a24398c00538919c0eb1ce2891c5081714c9f33
   }
 
   .swiper-slide {
@@ -77,6 +82,7 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+    opacity: 0.6;
 
     @media screen and (min-width: $tablet-width) {
       height: 200px;
@@ -96,7 +102,10 @@
       opacity: 1;
 
       img {
-        margin-left: -15px;
+        @media screen and (min-width: $tablet-width) {
+          margin-left: -15px;
+        }
+
       }
     }
   }

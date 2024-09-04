@@ -1,31 +1,22 @@
+import { checkMessage } from './functions/createMessage.js';
+import Inputmask from "inputmask/dist/inputmask.es6.js";
 
-function maskPhone(event) {
+export function checkPhone(input, name, userphone, regex, value) {
 
-  let formattedNumber = '';
-  let phone = event.target.value.replace(/\D/g, ''); // Remove all non-digit characters
+  if (input !== undefined && input !== null && value.length > 1 && input.value.length > 1) {
+    const phoneMask = new Inputmask("+7 (999) 999-99-99");
+    phoneMask.mask(input);
 
-  if (event !== 'keydown') {
-    if (phone.length > 0) {
-      formattedNumber += '+7 '; // Add country code
-    }
-    if (phone.length > 1) {
-      formattedNumber += '(' + phone.substring(1, 4); // Area code
-    }
-    if (phone.length >= 4) {
-      formattedNumber += ') ' + phone.substring(4, 7); // First 3 digits
-    }
-    if (phone.length >= 7) {
-      formattedNumber += '-' + phone.substring(7, 9); // Next 2 digits
-    }
-    if (phone.length >= 9) {
-      formattedNumber += '-' + phone.substring(9, 11); // Last 2 digits
+    const digitsOnly = value.replace(/\D/g, '');
+    if (digitsOnly.length < 11) {
+      checkMessage(input, name, userphone.empty.error, 'error');
+      return false;
+    } else {
+      checkMessage(input, name, userphone.empty.success, 'success');
+      return true;
     }
   }
-  userPhoneInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Backspace') {
-      formattedNumber.slice(0, -1)
-    }
-  })
-
-  return formattedNumber;
 }
+
+
+
