@@ -1,4 +1,5 @@
 import { robots } from '../data/robots.js'
+import { hammers } from '../data/hammers.js'
 
 let card = null;
 let link = null;
@@ -67,10 +68,20 @@ function createRobotsCard(robot, container) {
 }
 
 // Функция для рендеринга карточек на страницу
-export function renderRobotsCards(container) {
+export function renderRobotsCards(container, type) {
 
-  robots.forEach(robot => {
-    const card = createRobotsCard(robot, container);
+  let data = robots;
+
+  if (type == 'robots') {
+    data = robots;
+  }
+  if (type == 'hammers') {
+    data = hammers;
+  }
+
+
+  data.forEach(el => {
+    const card = createRobotsCard(el, container);
 
     if (container.closest('[class*="swiper"]')) {
       const wrapper = container.querySelector('.swiper-wrapper');
