@@ -4,9 +4,10 @@ import { messages } from './../constants.js';
 import { checkName } from './../name.js'
 import { checkPhone } from './../phone.js'
 import { checkEmail } from './../email.js'
+import { checkCompany } from './../company.js'
 
 function check(input, name, regexp) {
-  const { username, userphone, useremail } = messages;
+  const { username, userphone, useremail, usercompany } = messages;
 
   input.addEventListener('input', (e) => {
     const { value } = e.target;
@@ -20,6 +21,9 @@ function check(input, name, regexp) {
         break;
       case 'useremail':
         checkEmail(input, name, useremail, regexp, value);
+        break;
+      case 'usercompany':
+        checkCompany(input, name, usercompany, regexp, value);
         break;
     }
   })
@@ -35,6 +39,9 @@ export function checkInput(input, name) {
       break;
     case 'useremail':
       check(input, name, regexps.email);
+      break;
+    case 'usercompany':
+      check(input, name, regexps.company);
       break;
   }
 }
