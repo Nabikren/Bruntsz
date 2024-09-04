@@ -14,8 +14,8 @@ export function swiperSimilarInit(el, countSlides) {
     },
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-card-similar__button-next.swiper-button-next',
+      prevEl: '.swiper-card-similar__button-prev.swiper-button-prev',
     },
 
     breakpoints: {
