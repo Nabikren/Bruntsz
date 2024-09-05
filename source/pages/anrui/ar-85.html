@@ -60,6 +60,7 @@
             type="font/woff"
             crossorigin="anonymous"
         >
+        <link rel="stylesheet" href="/styles/vendor/swiper-bundle.min.css">
         <link rel="stylesheet" href="/styles/styles.css">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
@@ -72,7 +73,7 @@
             <div class="header__wrapper container">
                 <a class="logo" href="index.html">
                     <svg width="120" height="80">
-                        <use href="images/icons/stack.svg#logo_black"></use>
+                        <use href="/images/icons/stack.svg#logo_black"></use>
                     </svg>
                 </a>
                 <button type="button" class="button open-menu" id="menu-button">
@@ -85,16 +86,16 @@
                     <nav class="nav">
                         <ul class="nav__list list-style-none">
                             <li>
-                                <a class="link " href="index.html" aria-current="index">Главная</a>
+                                <a class="link current" href="/index.html" aria-current="index">Главная</a>
                             </li>
                             <li>
-                                <a class="link current" aria-label="current-page">Навесное оборудование</a>
+                                <a class="link" href="">Навесное оборудование</a>
                             </li>
                             <li>
-                                <a class="link" href="catalog-robots.html">Демонтажные роботы</a>
+                                <a class="link" href="/catalog-robots.html">Демонтажные роботы</a>
                             </li>
                             <li>
-                                <a class="link" href="contacts.html">Контакты</a>
+                                <a class="link" href="/contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -107,13 +108,13 @@
                             <a class="button primary-button" href="tel:+79516484842">
                                 Позвонить
                                 <svg width="20" height="50">
-                                    <use href="images/icons/stack.svg#phone_icon"></use>
+                                    <use href="./images/icons/stack.svg#phone_icon"></use>
                                 </svg>
                             </a>
                         </div>
                         <a class="link menu__email" href="mailto:brunt-sz@mail.ru">
                             <svg width="20" height="50">
-                                <use href="images/icons/stack.svg#email_icon"></use>
+                                <use href="./images/icons/stack.svg#email_icon"></use>
                             </svg>
                             brunt-sz@mail.ru
                         </a>
@@ -122,12 +123,12 @@
             </div>
         </header>
         <main class="main">
-            <section class="section molots hammer">
+            <section class="section molots hammer catalog">
                 <div class="container">
-                    <div class="molots__wrapper">
-                        <div class="molots__heading">
+                    <div class="catalog__wrapper">
+                        <div class="catalog__heading">
                             <h2 class="secondary-title">Каталог</h2>
-                            <ol class="molots__breadcrumbs list-style-none">
+                            <ol class="catalog__breadcrumbs list-style-none">
                                 <li>
                                     <a class="base-text-form" href="">Навесное оборудование</a>
                                 </li>
@@ -139,48 +140,51 @@
                                 </li>
                             </ol>
                         </div>
-                        <div class=" molots__content">
-                            <div class="molots__nav">
-                                <p class="base-text-form">Модель</p>
-                                <ul class="molots__list list-style-none">
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-45.html">AR45</a>
+                        <div class=" catalog__content">
+                            <div class="catalog__aside">
+                                <p class="catalog-aside__title base-text-form">Модель</p>
+                                <ul class="catalog-aside__list list-style-none">
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-45.html">AR45</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-53.html">AR53</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-53.html">AR53</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-68.html">AR68</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-68.html">AR68</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-75.html">AR75</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-75.html">AR75</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-85.html">AR85</a>
+                                    <li class="catalog-aside__item catalog-aside__item--current">
+                                        <a class="catalog-aside__link base-text-form" href="">AR85</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-100.html">AR100</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-100.html">AR100</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-140.html">AR140</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-140.html">AR140</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-155.html">AR155</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-155.html">AR155</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-175.html">AR175</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-165.html">AR165</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-20f.html">AR20F</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-175.html">AR175</a>
                                     </li>
-                                    <li>
-                                        <a class="base-text-form" href="/pages/anrui/ar-40f.html">AR40F</a>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-20f.html">AR20F</a>
+                                    </li>
+                                    <li class="catalog-aside__item">
+                                        <a class="catalog-aside__link base-text-form" href="/pages/anrui/ar-40f.html">AR40F</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="molots__info-wrapper">
+                            <div class="catalog__info-wrapper">
                                 <h3 class="secondary-title">Молот AR85</h3>
-                                <!-- <div class="catalog__images-wrapper gallery-main-wrapper">
+                                <div class="catalog__images-wrapper gallery-main-wrapper">
                                     <div class="gallery-container">
                                         <div class="swiper-container gallery-main">
                                             <div class="swiper-wrapper">
@@ -223,7 +227,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="catalog__text-wrapper">
                                     <p>Гидравлический молот AR85 разработан для тяжелых и интенсивных работ, таких как разрушение крупных конструкций и работы на карьерах.</p>
 
@@ -374,6 +378,13 @@
             <section class="section wish-products">
                 <div class="container">
                     <h2 class="secondary-title">Подходящие роботы</h2>
+                    <div class="swiper-card-similar">
+                        <div class="swiper-card swiper swiper-robots">
+                            <div class="swiper-wrapper"></div>
+                        </div>
+                        <div class="swiper-card-similar__button-prev swiper-button-prev"></div>
+                        <div class="swiper-card-similar__button-next swiper-button-next"></div>
+                    </div>
                 </div>
             </section>
             <section class="section form form-catalog">
