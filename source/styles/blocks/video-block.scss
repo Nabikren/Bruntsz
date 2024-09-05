@@ -23,11 +23,14 @@
     @media screen and (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 
   &__video-wrapper {
     position: relative;
+    width: 100%;
 
     @media screen and (min-width: $tablet-width) {
       margin-right: 20px;
@@ -35,18 +38,19 @@
 
     @media screen and (min-width: $desktop-width) {
       margin-right: 40px;
+      width: 50%;
     }
   }
 
   &__video {
-    max-width: 700px;
+    width: inherit;
     height: 400px;
     margin: auto;
     object-fit: cover;
 
     @media screen and (min-width: $tablet-width) {
       min-width: 345px;
-      max-width: 550px;
+      width: 100%;
       margin: auto;
       height: 300px;
     }
@@ -90,23 +94,12 @@
         background-size: cover;
         background-image: url('./../../images/icons/pause.svg');
         transform: rotate(0deg);
-
       }
     }
   }
 
-  &__description {
-    @media screen and (min-width: $tablet-width) {
-      margin-left: 20px;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      margin-left: 40px;
-    }
-  }
-
   &__text {
-    margin: 40px 0 40px 0;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 24px;
 
