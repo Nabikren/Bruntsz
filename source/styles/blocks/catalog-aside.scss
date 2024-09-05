@@ -23,8 +23,9 @@
     &--current {
       border: 1px solid $blue-18A0FB;
 
-      .link {
+      a {
         color: $black;
+        cursor: default;
       }
     }
   }

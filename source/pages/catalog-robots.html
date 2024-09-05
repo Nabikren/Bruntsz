@@ -6,73 +6,73 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_regular.woff2"
+            href="/fonts/Montserrat/Montserrat_regular.woff2"
             as="font"
             type="font/woff2"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_regular.woff"
+            href="/fonts/Montserrat/Montserrat_regular.woff"
             as="font"
             type="font/woff"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_semibold.woff2"
+            href="/fonts/Montserrat/Montserrat_semibold.woff2"
             as="font"
             type="font/woff2"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_semibold.woff"
+            href="/fonts/Montserrat/Montserrat_semibold.woff"
             as="font"
             type="font/woff"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_bold.woff2"
+            href="/fonts/Montserrat/Montserrat_bold.woff2"
             as="font"
             type="font/woff2"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Montserrat/Montserrat_bold.woff2"
+            href="/fonts/Montserrat/Montserrat_bold.woff2"
             as="font"
             type="font/woff"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Maki/maki.woff2"
+            href="/fonts/Maki/maki.woff2"
             as="font"
             type="font/woff2"
             crossorigin="anonymous"
         >
         <link
             rel="preload"
-            href="fonts/Maki/maki.woff"
+            href="/fonts/Maki/maki.woff"
             as="font"
             type="font/woff"
             crossorigin="anonymous"
         >
-        <link rel="stylesheet" href="./../../styles/styles.css">
-        <link rel="icon" href="favicon.ico">
-        <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="favicons/180.png">
-        <link rel="manifest" href="manifest.webmanifest">
-        <script src="./../../scripts/index.js" defer></script>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/favicons/180.png">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <script src="/scripts/index.js" defer></script>
     </head>
     <body class="page__body">
         <header class="header section">
             <div class="header__wrapper container">
                 <a class="logo" href="index.html">
                     <svg width="120" height="80">
-                        <use href="./images/icons/stack.svg#logo_black"></use>
+                        <use href="/images/icons/stack.svg#logo_black"></use>
                     </svg>
                 </a>
                 <button type="button" class="button open-menu" id="menu-button">
@@ -85,16 +85,16 @@
                     <nav class="nav">
                         <ul class="nav__list list-style-none">
                             <li>
-                                <a class="link current" href="index.html">Главная</a>
+                                <a class="link " href="/index.html" aria-current="index">Главная</a>
                             </li>
                             <li>
-                                <a class="link" href="catalog-amout.html">Навесное оборудование</a>
+                                <a class="link" href="/pages/catalog-attachments.html">Навесное оборудование</a>
                             </li>
                             <li>
-                                <a class="link" href="catalog-robots.html" aria-current="index">Демонтажные роботы</a>
+                                <a class="link current" aria-label="current-page">Демонтажные роботы</a>
                             </li>
                             <li>
-                                <a class="link" href="contacts.html">Контакты</a>
+                                <a class="link" href="/pages/contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -104,9 +104,19 @@
                                 <span>ПН-ПТ</span>
                                 <span>9:00-18:00</span>
                             </p>
-                            <a class="button primary-button" href="tel:+79516484842">Позвонить</a>
+                            <a class="button primary-button" href="tel:+79516484842">
+                                Позвонить
+                                <svg width="20" height="50">
+                                    <use href="/images/icons/stack.svg#phone_icon"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <a class="link menu__email" href="mailto:brunt-sz@mail.ru">brunt-sz@mail.ru</a>
+                        <a class="link menu__email" href="mailto:brunt-sz@mail.ru">
+                            <svg width="20" height="50">
+                                <use href="/images/icons/stack.svg#email_icon"></use>
+                            </svg>
+                            brunt-sz@mail.ru
+                        </a>
                     </div>
                 </div>
             </div>
