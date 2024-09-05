@@ -31,6 +31,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
   `!${PATH_TO_SOURCE}images/icons/**/*`,
+  `!${PATH_TO_SOURCE}videos/**/*`,
   `!${PATH_TO_SOURCE}**/README.md`,
 ];
 let isDevelopment = true;
@@ -158,6 +159,10 @@ export function startServer() {
       {
         route: '/images',
         dir: `${PATH_TO_SOURCE}images`,
+      },
+      {
+        route: '/videos',
+        dir: `${PATH_TO_SOURCE}videos`,
       },
     ],
     cors: true,

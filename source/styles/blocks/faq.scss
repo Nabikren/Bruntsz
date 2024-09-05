@@ -12,8 +12,10 @@
   }
 
   &__list {
+    display: grid;
+    gap: 10px;
+
     @media screen and (min-width: $tablet-width) {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px 25px;
       align-items: flex-start;
