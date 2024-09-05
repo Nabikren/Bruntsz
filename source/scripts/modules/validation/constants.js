@@ -18,6 +18,7 @@ export const classesValid = [
   'valid-class',
   'valid'
 ]
+
 export const classesInValid = [
   'red-text',
   'invalid-class',

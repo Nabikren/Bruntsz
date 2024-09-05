@@ -66,6 +66,7 @@
     @media screen and (min-width: $desktop-width) {
       display: flex;
       max-width: 100%;
+      gap: 20px;
       padding-top: 60px;
     }
   }
