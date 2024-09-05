@@ -142,29 +142,42 @@ img {
 
 
 .invalid {
-  border: 2px solid red;
-  outline: none;
+  outline: 3px solid $red-FF4B4B;
 
   &:focus {
-    border: 2px solid red;
+    outline: 3px solid $red-FF4B4B;
   }
 
   &:focus-visible {
-    border: 2px solid red;
+    outline: 3px solid $red-FF4B4B;
   }
 }
 
 .valid {
-  border: 2px solid greenyellow;
-  position: relative;
-  outline: none;
+  outline: 3px solid $blue-70C6FF;
 
   &:focus {
-    border: 2px solid greenyellow;
+    outline: 3px solid $blue-70C6FF;
   }
 
   &:focus-visible {
-    border: 2px solid greenyellow;
+    outline: 3px solid $blue-70C6FF;
+  }
+}
+
+.invalid-class,
+.valid-class {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  border-radius: 15px;
+  background-color: rgba(251, 241, 241, 0.7);
+  padding: 10px;
+  top: 95px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 120px;
   }
 }
 
@@ -179,8 +192,9 @@ img {
     z-index: 1;
     width: 20px;
     height: 20px;
-    background-color: greenyellow;
-    clip-path: polygon(16% 43%, 38% 73%, 88% 0, 33% 100%);
+    flex-shrink: 0;
+    background-color: $blue-18A0FB;
+    clip-path: polygon(16% 30%, 38% 69%, 63% 16%, 79% 17%, 47% 92%, 30% 92%, 8% 50%);
   }
 }
 
@@ -193,26 +207,20 @@ img {
     content: '';
     display: block;
     z-index: 1;
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    background-color: $red-FF4B4B;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
   }
 }
 
-.red-text,
-.green-text {
-  background-color: rgba(0, 29, 158, 0.5);
-  border-radius: 5px;
-  padding: 10px;
-}
-
 .red-text {
-  color: red;
+  color: $red-FF4B4B;
 }
 
 .green-text {
-  color: greenyellow;
+  color: $blue-18A0FB;
 }
 
 .gallery-thumbs .swiper-slide-prev {

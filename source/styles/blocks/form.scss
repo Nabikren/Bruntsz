@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 240px;
-    margin-top: -215px;
     margin-bottom: 100px;
 
     &::before,
@@ -48,7 +47,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      background-image: url('/images/form.webp');
+      background-image: url('/images/bg-form.webp');
       background-position: 0 100%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -134,19 +133,22 @@
     @media screen and (min-width: $desktop-width) {
       max-width: 600px;
     }
-
-
-
   }
 
   .button {
     min-width: calc(100% - 40px);
     margin: 0 auto;
+    font-weight: 700;
+    font-size: 18px;
 
     @media screen and (min-width: $tablet-width) {
       grid-column: 1/-1;
       min-width: 355px;
-      margin-right: 0;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 600px;
     }
 
     &:disabled {

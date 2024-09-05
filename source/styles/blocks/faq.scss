@@ -14,11 +14,13 @@
   &__list {
     display: grid;
     gap: 10px;
+    justify-content: center;
 
     @media screen and (min-width: $tablet-width) {
       grid-template-columns: 1fr 1fr;
       gap: 10px 25px;
       align-items: flex-start;
+
     }
   }
 
@@ -27,10 +29,27 @@
     border-radius: 15px;
     padding: 20px;
     height: auto;
+    justify-items: center;
+    max-width: 500px;
 
     @media screen and (min-width: $tablet-width) {
-      max-width: 600px;
-      min-width: 355px;
+      max-width: 365px;
+
+      &:nth-of-type(odd) {
+        justify-self: flex-end;
+      }
+
+      &:nth-of-type(even) {
+        justify-self: flex-start;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 500px;
     }
   }
 
