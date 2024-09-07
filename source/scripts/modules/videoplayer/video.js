@@ -7,8 +7,8 @@ const sources = video.querySelectorAll('source');
 
 
 export function playVideo() {
-  const count = 7;
-  let currentIndex = 0;
+  const count = 6;
+  let currentIndex = 1;
   const zoom = 'zoom';
 
   if (video !== null && playButton !== null) {
@@ -35,19 +35,19 @@ export function playVideo() {
       playButton.addEventListener('click', () => {
         const endedHandler = () => {
           currentIndex++;
-          if (currentIndex < count) {
+          if (currentIndex <= count) {
             changeVideoSource(`/videos/video-path${currentIndex}`, ['.webm', '.mp4']);
-            video.load();
+            // video.load();
             if (isPlaying) {
               video.play();
             }
           } else {
-            currentIndex = 0;
-            changeVideoSource(`/videos/video-path${1}`, ['.webm', '.mp4']);
+            currentIndex = 1;
+            isPlaying = false;
             video.pause();
+            changeVideoSource(`/videos/video-path${currentIndex}`, ['.webm', '.mp4']);
             playButton.classList.remove('pause');
             video.removeEventListener('ended', endedHandler);
-            isPlaying = false;
           }
         };
         video.addEventListener('ended', endedHandler);
@@ -59,12 +59,12 @@ export function playVideo() {
           video.load();
         }
 
-        isPlaying ? playButton.classList.remove('pause') : playButton.classList.add('pause')
 
         if (isPlaying) {
+          playButton.classList.remove('pause')
           video.pause();
         } else {
-          video.play();
+          video.play(); playButton.classList.add('pause')
         }
         isPlaying = !isPlaying;
       })
