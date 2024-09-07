@@ -27,13 +27,14 @@
   &__item {
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     height: auto;
     justify-items: center;
     max-width: 500px;
 
     @media screen and (min-width: $tablet-width) {
       max-width: 365px;
+      padding: 20px;
 
       &:nth-of-type(odd) {
         justify-self: flex-end;
