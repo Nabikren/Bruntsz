@@ -9,7 +9,7 @@ export function swiperSimilarInit(el, countSlides) {
     slidesPerView: countSlides,
     speed: 500,
     autoplay: {
-      delay: 2500,
+      delay: 25010,
       disableOnInteraction: false,
     },
     loop: true,
