@@ -3,9 +3,12 @@ const zoomButton = document.querySelector('.video-block__zoom-button');
 const soundButton = document.querySelector('.video-block__sound-button');
 const video = document.querySelector('.video-block__video');
 const videoWrapper = document.querySelector('.video-block__video-wrapper');
-const sources = video.querySelectorAll('source');
 
+let sources = null;
 
+if (video !== null) {
+  sources = video.querySelectorAll('source');
+}
 
 export function playVideo() {
   const count = 6;
@@ -85,5 +88,7 @@ export function playVideo() {
         isPlaying = !isPlaying;
       })
     }
+  } else {
+    return () => { return };
   }
 }

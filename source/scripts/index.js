@@ -12,6 +12,8 @@ swiperThumbs();
 validation();
 playVideo()();
 
+
+
 const container = document.querySelector('.robots-card');
 if (container !== null) {
   renderRobotsCards(container);
