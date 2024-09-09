@@ -30,6 +30,7 @@
     border: 1px solid $blue-18A0FB;
     border-radius: 15px;
     position: relative;
+    overflow: hidden;
     aspect-ratio: 1 / 1;
     width: 100%;
 
@@ -48,7 +49,6 @@
     align-items: center;
     height: inherit;
   }
-
 
   &__content {
     text-decoration: none;
