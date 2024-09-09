@@ -1,0 +1,7 @@
+.hero-404 {
+  margin-bottom: 100px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 200px;
+  }
+}
