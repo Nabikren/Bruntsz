@@ -126,20 +126,29 @@ img {
 
   svg {
     position: absolute;
-    top: 50%;
+    top: 17px;
     transform: translateY(-50%);
     left: 5px;
   }
-}
 
-.input-search {
-  border: 1px solid $blue-18A0FB;
-  padding: 10px 8px 8px 30px;
-  border-radius: 15px;
-  color: $grey-A0A3BD;
-  font-weight: 700;
-}
+  &__input-wrapper {
+    width: inherit;
+    margin-bottom: 20px;
+  }
 
+  &__input {
+    border: 1px solid $blue-18A0FB;
+    padding: 10px 8px 8px 30px;
+    border-radius: 15px;
+    color: $grey-A0A3BD;
+    font-weight: 700;
+  }
+
+  .search-results {
+    margin: 0 auto;
+    width: max-content;
+  }
+}
 
 .invalid {
   outline: 3px solid $red-FF4B4B;

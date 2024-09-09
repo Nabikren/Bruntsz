@@ -31,7 +31,7 @@ export function validation() {
   }
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     checkWithSubmit(form, buttonSubmit);
   })
 }
