@@ -41,24 +41,19 @@
 
     &-prev,
     &-next {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      top: auto;
-      left: auto;
       height: 75px;
       width: 40px;
-      color: #e9e9e9;
-      background: #1e1e1e;
+
 
       &::after {
-        font-size: 12px;
+        font-size: 40px;
       }
     }
 
     &-prev {
-      right: 40px;
-      border-right: 1px solid #e9e9e9;
+      @media screen and (min-width: $tablet-width) {
+        left: 20%;
+      }
     }
   }
 }
@@ -68,7 +63,7 @@
   width: 100%;
   padding-left: 15px;
   padding-top: 10px;
-  height: 100%;
+  // height: 100%;
 
   @media screen and (min-width: $tablet-width) {
     width: 20%;
