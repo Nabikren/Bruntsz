@@ -143,6 +143,39 @@
     }
   }
 
+  &__sound-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $blue-18A0FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url('./../../images/icons/sound-off.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.sound {
+      opacity: 0.5;
+
+      &::after {
+        background-image: url('./../../images/icons/sound-on.svg');
+      }
+    }
+  }
+
   &__text {
     margin-bottom: 20px;
     font-size: 16px;

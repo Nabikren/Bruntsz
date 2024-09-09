@@ -1,5 +1,6 @@
 const playButton = document.querySelector('.video-block__play-button');
 const zoomButton = document.querySelector('.video-block__zoom-button');
+const soundButton = document.querySelector('.video-block__sound-button');
 const video = document.querySelector('.video-block__video');
 const videoWrapper = document.querySelector('.video-block__video-wrapper');
 const sources = video.querySelectorAll('source');
@@ -10,12 +11,27 @@ export function playVideo() {
   const count = 6;
   let currentIndex = 1;
   const zoom = 'zoom';
+  const sound = 'sound';
 
   if (video !== null && playButton !== null) {
     let isPlaying = false;
     let isZoomed = false;
+    let isSound = false;
 
     return function () {
+      soundButton.addEventListener('click', () => {
+        video.muted = !video.muted;
+        isSound = !isSound;
+        soundButton.classList.remove(sound)
+
+        if (isSound) {
+          soundButton.classList.add(sound)
+        } else {
+          soundButton.classList.remove(sound)
+        }
+
+      })
+
       zoomButton.addEventListener('click', () => {
 
         isZoomed = !isZoomed;
