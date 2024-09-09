@@ -5,13 +5,14 @@ import { swiperSimilarInit } from './modules/swiper.js';
 import { swiperThumbs } from './modules/swiperThumbs.js';
 import { validation } from './modules/validation.js';
 import { playVideo } from './modules/videoplayer/video.js';
+import { initSearch } from './modules/search/search.js';
 
 toggleMenu();
 initDropdown();
 swiperThumbs();
 validation();
 playVideo()();
-
+initSearch();
 
 
 const container = document.querySelector('.robots-card');
