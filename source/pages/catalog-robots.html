@@ -151,7 +151,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="catalog__info-wrapper">
+                            <div id="about" class="catalog__info-wrapper">
                                 <h3 class="secondary-title">Демонтажные роботы Brunt</h3>
                                 <div class="catalog__description">
                                     <p class="base-text-form">Сердце демонтажного робота: передовые компоненты мировых лидеров</p>
@@ -194,8 +194,109 @@
                             </svg>
                         </div>
                         <div class="catalog__product">
-                            <div class="robots-card grid-3-12"></div>
+                            <div id="robots" class="robots-card grid-3-12"></div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section id="order" class="section form form-catalog">
+                <div class="form__wrapper container">
+                    <div class="form__content">
+                        <div class="form-catalog__advantages">
+                            <h2 class="secondary-title">
+                                Закажи уже сегодня
+                            </h2>
+                            <p class="third-base-text">Мы свяжемся с вами, и подоберём для вас индивидуальное предложение, так же проконсультируем по любым вопросам.</p>
+                            <ul class="form-catalog__list list-style-none">
+                                <li>
+                                    <div class="form-catalog__icon">
+                                        <svg width="120" height="80">
+                                            <use href="/images/icons/stack.svg#headphones"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Проконсультируем</span>
+                                </li>
+                                <li>
+                                    <div class="form-catalog__icon">
+                                        <svg width="120" height="80">
+                                            <use href="/images/icons/stack.svg#ingener"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Поможем с выбором техники, а так же с техническими вопросами</span>
+                                </li>
+                                <li>
+                                    <div class="form-catalog__icon">
+                                        <svg width="120" height="80">
+                                            <use href="/images/icons/stack.svg#agree"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Предоставим выголное для вас предложение</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <form
+                            class="form__form"
+                            action=""
+                            method="post"
+                            autocomplete="true"
+                        >
+                            <p class="form__block">
+                                <label class="label base-text-form" for="username">Имя*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="username"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Иван Иванов"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="userphone">Телефон*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="userphone"
+                                    id="userphone"
+                                    name="userphone"
+                                    placeholder="+7 (123) 456 - 78 - 90"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="useremail">Email*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="useremail"
+                                    id="useremail"
+                                    name="useremail"
+                                    placeholder="example@email.com"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="usercompany">Компания*</label>
+                                <input
+                                    class="input base-text-form-placeholder"
+                                    for="usercompany"
+                                    id="usercompany"
+                                    name="usercompany"
+                                    placeholder="Друзья и КО"
+                                    required
+                                ></input>
+                            </p>
+                            <p class="form__block">
+                                <label class="label base-text-form" for="usercomments">Комментарий</label>
+                                <textarea
+                                    class="input base-text-form-placeholder"
+                                    for="usercomments"
+                                    id="usercomments"
+                                    name="usercomments"
+                                    placeholder="Поле ввода сообщения"
+                                    required
+                                ></textarea>
+                            </p>
+                            <button type="submit" class="button third-button ">Заказать</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -206,7 +307,7 @@
                     <div class="footer__wrapper container">
                         <a class="logo" href="index.html">
                             <svg width="120" height="80">
-                                <use href="./images/icons/stack.svg#logo_white"></use>
+                                <use href="/images/icons/stack.svg#logo_white"></use>
                             </svg>
                         </a>
                         <div class="footer__blocks">
@@ -214,143 +315,30 @@
                                 <p class="decor-text third-base-text">Меню</p>
                                 <ul class="list-style-none  footer__block-list">
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Главная</a>
+                                        <a class="base-link secondary-base-text" href="/index.html">Главная</a>
                                     </li>
                                     <li>
                                         <a class="base-link secondary-base-text" href="">Демонтажное оборудование</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Навесное оборуднование</a>
+                                        <a class="base-link secondary-base-text" href="/pages/catalog-atachments.html">Навесное оборуднование</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Гарантия</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text " href="">Контакты</a>
+                                        <a class="base-link secondary-base-text " href="/pages/contacts.html">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
-                            <section class="section form form-catalog">
-                                <div class="form__wrapper container">
-                                    <div class="form__content">
-                                        <div class="form-catalog__advantages">
-                                            <h2 class="secondary-title">
-                                                Закажи уже сегодня
-                                            </h2>
-                                            <p class="third-base-text">Мы свяжемся с вами, и подоберём для вас индивидуальное предложение, так же проконсультируем по любым вопросам.</p>
-                                            <ul class="form-catalog__list list-style-none">
-                                                <li>
-                                                    <div class="form-catalog__icon">
-                                                        <svg width="120" height="80">
-                                                            <use href="images/icons/stack.svg#headphones"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <span>Проконсультируем</span>
-                                                </li>
-                                                <li>
-                                                    <div class="form-catalog__icon">
-                                                        <svg width="120" height="80">
-                                                            <use href="images/icons/stack.svg#ingener"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <span>Поможем с выбором техники, а так же с техническими вопросами</span>
-                                                </li>
-                                                <li>
-                                                    <div class="form-catalog__icon">
-                                                        <svg width="120" height="80">
-                                                            <use href="images/icons/stack.svg#agree"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <span>Предоставим выголное для вас предложение</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <form
-                                            class="form__form"
-                                            action=""
-                                            method="post"
-                                            autocomplete="true"
-                                        >
-                                            <p class="form__block">
-                                                <label class="label base-text-form" for="username">Имя*</label>
-                                                <input
-                                                    class="input base-text-form-placeholder"
-                                                    for="username"
-                                                    id="username"
-                                                    name="username"
-                                                    placeholder="Иван Иванов"
-                                                    required
-                                                ></input>
-                                            </p>
-                                            <p class="form__block">
-                                                <label class="label base-text-form" for="userphone">Телефон*</label>
-                                                <input
-                                                    class="input base-text-form-placeholder"
-                                                    for="userphone"
-                                                    id="userphone"
-                                                    name="userphone"
-                                                    placeholder="+7 (123) 456 - 78 - 90"
-                                                    required
-                                                ></input>
-                                            </p>
-                                            <p class="form__block">
-                                                <label class="label base-text-form" for="useremail">Email*</label>
-                                                <input
-                                                    class="input base-text-form-placeholder"
-                                                    for="useremail"
-                                                    id="useremail"
-                                                    name="useremail"
-                                                    placeholder="example@email.com"
-                                                    required
-                                                ></input>
-                                            </p>
-                                            <p class="form__block">
-                                                <label class="label base-text-form" for="usercompany">Компания*</label>
-                                                <input
-                                                    class="input base-text-form-placeholder"
-                                                    for="usercompany"
-                                                    id="usercompany"
-                                                    name="usercompany"
-                                                    placeholder="Друзья и КО"
-                                                    required
-                                                ></input>
-                                            </p>
-                                            <p class="form__block">
-                                                <label class="label base-text-form" for="usercomments">Комментарий</label>
-                                                <textarea
-                                                    class="input base-text-form-placeholder"
-                                                    for="usercomments"
-                                                    id="usercomments"
-                                                    name="usercomments"
-                                                    placeholder="Поле ввода сообщения"
-                                                    required
-                                                ></textarea>
-                                            </p>
-                                            <button type="submit" class="button third-button ">Заказать</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </section>
                             <div class="footer__block">
                                 <p class="decor-text third-secondary-base-text">Компания</p>
                                 <ul class="list-style-none footer__block-list">
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">О компании</a>
+                                        <a class="base-link secondary-base-text" href="#about">О роботах</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Продукция</a>
+                                        <a class="base-link secondary-base-text" href="#robots">Роботы</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Преимущества</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">Демонстрация</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">ЧаВо</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">Обратный звонок</a>
+                                        <a class="base-link secondary-base-text" href="#order">Заказать</a>
                                     </li>
                                 </ul>
                             </div>
@@ -362,7 +350,7 @@
                                             <span class="visually-hidden">whatsapp</span>
                                             <img
                                                 class="social-list__icon"
-                                                src="./../images/whatsapp_icon.svg"
+                                                src="/images/whatsapp_icon.svg"
                                                 alt=""
                                                 width="45"
                                                 height="45"
@@ -373,7 +361,7 @@
                                         <a class="social-list__link link social-list__link--telegram" href="https://t.me/brunt_oleg" target="_blank">
                                             <span class="visually-hidden">telegram</span>
                                             <svg width="45" height="45" class="social-list__icon social-list__icon">
-                                                <use href="./../images/icons/stack.svg#telegram_icon"></use>
+                                                <use href="/images/icons/stack.svg#telegram_icon"></use>
                                             </svg>
                                         </a>
                                     </li>
