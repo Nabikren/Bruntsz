@@ -80,8 +80,8 @@ export const messages = {
 
 export const regexps = {
   name: {
-    default: /^[А-Яа-яЁё]+( [А-Яа-яЁё]+)?( [А-Яа-яЁё]+)?$/,
-    symbols: /[!@#$%^&*(),.?":;№{}|<>\"' ]/,
+    default: /^[А-Яа-яЁё\s]+$/,
+    symbols: /[!@#$%^&*(),.?":;№{}|<>\"']/,
     numbers: /\d/
   },
   email: {
@@ -91,6 +91,6 @@ export const regexps = {
   },
   company: {
     numbers: /\d/,
-    symbols: /[!@#$%^&*(),.?":;№{}|<>\"' ]/,
+    symbols: /[!@#$%^&*(),.?":;№{}|<>\"']/,
   }
 }

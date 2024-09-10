@@ -10,28 +10,42 @@ export function validation() {
   checkInput(userCompanyInput, 'usercompany');
 
   function checkWithSubmit(form) {
-    const condition = () => {
+    const condition =
       userNameInput.nextElementSibling.classList.contains('valid-class') &&
-        userPhoneInput.nextElementSibling.classList.contains('valid-class') &&
-        userEmailInput.nextElementSibling.classList.contains('valid-class') &&
-        userCompanyInput.nextElementSibling.classList.contains('valid-class') &&
-        hiddenInput.value.length <= 0
-    }
+      userPhoneInput.nextElementSibling.classList.contains('valid-class') &&
+      userEmailInput.nextElementSibling.classList.contains('valid-class') &&
+      userCompanyInput.nextElementSibling.classList.contains('valid-class') &&
+      hiddenInput.value.length === 0;
 
-    if (condition()) {
-      form.submit();
-      buttonSubmit.setAttribute('disabled', true)
+    if (condition) {
+      buttonSubmit.classList.add('submitted');
       buttonSubmit.textContent = 'Отправлено';
 
-      setTimeout(() => {
-        buttonSubmit.setAttribute('disabled', false)
-        buttonSubmit.textContent = 'Заказать';
-      }, 300)
+      const formData = new FormData(form); // Собираем данные формы
+
+      fetch('/php/send_email.php', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Ошибка сети');
+          }
+          return response.text(); // Получаем текст ответа
+        })
+        .then(data => {
+          return data; // Выводим ответ на страницу
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+          buttonSubmit.classList.remove('submitted');
+          buttonSubmit.textContent = 'Заказать';
+        });
     }
   }
 
   form.addEventListener('submit', (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     checkWithSubmit(form, buttonSubmit);
   })
 }
