@@ -71,7 +71,7 @@
     <body class="page__body">
         <header class="header section">
             <div class="header__wrapper container">
-                <a class="logo" href="index.html">
+                <a class="logo" href="/index.html">
                     <svg width="120" height="80">
                         <use href="/images/icons/stack.svg#logo_black"></use>
                     </svg>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section form form-catalog">
+            <section id="callback" class="section form form-catalog">
                 <div class="form__wrapper container">
                     <div class="form__content">
                         <div class="form-catalog__advantages">
@@ -169,9 +169,9 @@
                         </div>
                         <form
                             class="form__form"
-                            action=""
-                            method="post"
                             autocomplete="true"
+                            action="/php/send_email.php"
+                            method="POST"
                         >
                             <p class="form__block">
                                 <label class="label base-text-form" for="username">Имя*</label>
@@ -233,7 +233,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section map container">
+            <section id="howto" class="section map container">
                 <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
                 <div class="map__wrapper">
                     <div class="map__iframe-wrapper">
@@ -246,7 +246,7 @@
             <div class="footer__wrapper--lines">
                 <div class="footer__wrapper-bg">
                     <div class="footer__wrapper container">
-                        <a class="logo" href="index.html">
+                        <a class="logo" href="/index.html">
                             <svg width="120" height="80">
                                 <use href="/images/icons/stack.svg#logo_white"></use>
                             </svg>
@@ -265,9 +265,6 @@
                                         <a class="base-link secondary-base-text" href="">Навесное оборуднование</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Гарантия</a>
-                                    </li>
-                                    <li>
                                         <a class="base-link secondary-base-text " href="">Контакты</a>
                                     </li>
                                 </ul>
@@ -276,22 +273,10 @@
                                 <p class="decor-text third-secondary-base-text">Компания</p>
                                 <ul class="list-style-none footer__block-list">
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">О компании</a>
+                                        <a class="base-link secondary-base-text" href="#callback">Обратный звонок</a>
                                     </li>
                                     <li>
-                                        <a class="base-link secondary-base-text" href="">Продукция</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">Преимущества</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">Демонстрация</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">ЧаВо</a>
-                                    </li>
-                                    <li>
-                                        <a class="base-link secondary-base-text" href="">Обратный звонок</a>
+                                        <a class="base-link secondary-base-text" href="#howto">Как добраться</a>
                                     </li>
                                 </ul>
                             </div>
