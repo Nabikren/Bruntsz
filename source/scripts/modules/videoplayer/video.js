@@ -42,42 +42,27 @@ export function playVideo() {
         if (isZoomed) {
           video.classList.add(zoom);
           videoWrapper.classList.add(zoom);
-          zoomButton.classList.add(zoom)
+          zoomButton.classList.add(zoom);
+          document.querySelector('body').style.overflow = 'hidden';
         } else {
           video.classList.remove(zoom);
           videoWrapper.classList.remove(zoom);
-          zoomButton.classList.remove(zoom)
+          zoomButton.classList.remove(zoom);
+          document.querySelector('body').style.overflow = 'auto';
         }
 
       })
 
+
       playButton.addEventListener('click', () => {
-        const endedHandler = () => {
-          currentIndex++;
-          if (currentIndex <= count) {
-            changeVideoSource(`/videos/video-path${currentIndex}`, ['.webm', '.mp4']);
-            // video.load();
-            if (isPlaying) {
-              video.play();
-            }
-          } else {
-            currentIndex = 1;
-            isPlaying = false;
-            video.pause();
-            changeVideoSource(`/videos/video-path${currentIndex}`, ['.webm', '.mp4']);
-            playButton.classList.remove('pause');
-            video.removeEventListener('ended', endedHandler);
-          }
-        };
-        video.addEventListener('ended', endedHandler);
 
-        function changeVideoSource(newSource, ext) {
-          sources.forEach((source, index) => {
-            source.setAttribute('src', newSource + ext[index]);
-          });
-          video.load();
+        if (isPlaying) {
+          video.play();
+        } else {
+          isPlaying = false;
+          video.pause();
+          playButton.classList.remove('pause');
         }
-
 
         if (isPlaying) {
           playButton.classList.remove('pause')

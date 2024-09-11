@@ -24,6 +24,7 @@ img {
 
 .page {
   height: 100%;
+  scroll-behavior: smooth;
 
   &__body {
     font-family: $primary-font;
@@ -38,6 +39,7 @@ img {
     justify-content: space-between;
     min-height: 100%;
     overflow-x: hidden;
+
 
     @media screen and (min-width: $tablet-width) {
       line-height: 1.25;
