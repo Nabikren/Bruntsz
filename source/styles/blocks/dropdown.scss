@@ -1,4 +1,6 @@
 .dropdown {
+  margin-bottom: 10px;
+
   &__tab {
     font-weight: 700;
     display: flex;
@@ -17,7 +19,6 @@
       transition: 0.3s ease-in-out;
 
       &.state {
-
         transform: rotate(270deg);
       }
     }

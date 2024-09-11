@@ -89,7 +89,9 @@
   }
 
   .button {
-    max-width: 264px;
+    @media screen and (min-width: $tablet-width) {
+      max-width: 264px;
+    }
   }
 
   &__image-wrapper {
