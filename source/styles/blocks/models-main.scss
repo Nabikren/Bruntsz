@@ -22,6 +22,10 @@
     @media (min-width: $tablet-width) {
       margin-top: 40px;
       flex-shrink: 0;
+
+      .button {
+        max-width: 264px;
+      }
     }
   }
 
@@ -35,6 +39,7 @@
   &__list {
     margin-top: 20px;
     padding-left: 20px;
+    padding-bottom: 40px;
   }
 
   &__item {
@@ -70,7 +75,7 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      width: 100%
+      width: 100%;
     }
   }
 }
