@@ -13,6 +13,10 @@
 
   &__content {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: $tablet-width) {
       justify-content: center;
@@ -30,7 +34,6 @@
     max-width: 455px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    margin-inline: auto;
     display: flex;
     background-image: url('../../images/main_fact_img@2x.webp');
     background-size: contain;
