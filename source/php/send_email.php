@@ -70,13 +70,13 @@ $message = "
 
 $message = wordwrap($message, 70);
 
-$headers = 'From: andrey@andrew.ru' . "\r\n" .
-  'Reply-To: andrey@andrew.ru' . "\r\n" .
+$headers = 'From: order@brunt-sz.ru' . "\r\n" .
+  'Reply-To: order@brunt-sz.ru' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
-var_dump(mail('chernigovsky108@gmail.com', 'Регистрация заявки - Brunt', $message, $headers));
+mail('brunt-sz@mail.ru', 'Регистрация заявки - Brunt', $message, $headers);
 echo "<div style='max-width:1024px; margin:0 auto; padding:0 20px; text-align: center;'>
-<p style='color:green;'>Уважаемый(ая) <b style='color:red; font-size:24px'>$username</b> Ваше письмо отправленно успешно. Спасибо. <br>Вам перезвонят в течении 2 часов на номер<b style='color:red;'><span style='letter-spacing: 2px;'> $userphone</span></b>.</p>
+<p style='color:green;'>Уважаемый(ая) <b style='color:red; font-size:24px'>$username</b> Ваше письмо отправленно успешно. Спасибо, наш менеджер с Вами свяжется.</p>
 </div>";
-echo "<a style='font-size: 24px; text-align: center' href='https://izosimovv-andrew.ru'>Вернуться на главную</a>"
+echo "<a style='font-size: 24px; text-align: center' href='https://brunt-sz.ru'>Вернуться на главную</a>"
   ?>
