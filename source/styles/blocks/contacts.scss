@@ -1,0 +1,61 @@
+.contacts {
+  li {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+      width: 1100px;
+    }
+  }
+
+  &__heading {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    margin-bottom: 40px;
+    column-gap: 20px;
+
+    @media screen and (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__adress {
+    @media screen and (min-width: $desktop) {
+      width: 400px;
+    }
+  }
+
+  &__contacts-wrapper {
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 12px;
+    }
+  }
+
+  &__details-wrapper {
+    @media screen and (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+  }
+
+  &__main-details {
+    max-width: 400px;
+  }
+
+  &__bank-details {
+    max-width: 400px;
+  }
+}

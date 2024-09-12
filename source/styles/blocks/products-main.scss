@@ -101,6 +101,10 @@
     min-width: 55%;
     min-height: inherit;
     grid-column: 1/-1;
+    outline: 1px solid $white;
+    outline-offset: -5px;
+    border: 1px solid $white;
+    box-shadow: 0 0 0 10px $white;
 
     @media screen and (min-width: 430px) {
       background-size: cover;
@@ -124,6 +128,10 @@
 
     @media screen and (min-width: $desktop-width) {
       min-height: 820px;
+      outline: inherit;
+      outline-offset: inherit;
+      border: inherit;
+      box-shadow: inherit;
     }
 
     @media screen and (min-width: $desktop-3) {

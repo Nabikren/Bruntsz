@@ -1,12 +1,20 @@
 .form {
   position: relative;
   margin-bottom: 40px;
+  outline: 1px solid #fff;
+  outline-offset: -5px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 10px #fff;
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     padding-top: 240px;
     margin-bottom: 100px;
+    outline: inherit;
+    outline-offset: inherit;
+    border: inherit;
+    box-shadow: inherit;
 
     &::before,
     &::after {
