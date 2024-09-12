@@ -14,7 +14,6 @@ export function validation() {
       userNameInput.nextElementSibling.classList.contains('valid-class') &&
       userPhoneInput.nextElementSibling.classList.contains('valid-class') &&
       userEmailInput.nextElementSibling.classList.contains('valid-class') &&
-      userCompanyInput.nextElementSibling.classList.contains('valid-class') &&
       hiddenInput.value.length === 0;
 
     if (condition) {
