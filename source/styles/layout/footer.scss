@@ -130,6 +130,7 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    row-gap: 40px;
 
     @media screen and (min-width: $tablet-width) {
       justify-content: space-between;
@@ -193,7 +194,7 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 28px 0 40px 0;
+    padding: 0 0 40px 0;
   }
 
   .logo {
