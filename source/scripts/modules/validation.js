@@ -20,6 +20,11 @@ export function validation() {
       buttonSubmit.classList.add('submitted');
       buttonSubmit.textContent = 'Отправлено';
 
+      setTimeout(() => {
+        buttonSubmit.classList.remove('submitted');
+        buttonSubmit.textContent = 'Заказать';
+      }, 500);
+
       const formData = new FormData(form); // Собираем данные формы
 
       fetch('/php/send_email.php', {
@@ -46,5 +51,10 @@ export function validation() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkWithSubmit(form, buttonSubmit);
+    const validElements = document.querySelectorAll('.valid-class');
+    validElements.forEach(element => {
+      element.remove();
+    });
+    form.reset();
   })
 }
