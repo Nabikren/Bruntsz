@@ -4,11 +4,15 @@ function setCookie(name, value, days) {
   const expires = new Date();
   expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
   document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+  localStorage.setItem('setCookie', true);
 }
 
 // Функция для включения формы
-function enableForm(){
-  formElements.buttonSubmit.disabled = false;
+function enableForm() {
+  const coockie = localStorage.getItem('setCookie');
+  if (coockie === 'true') {
+    formElements.buttonSubmit.disabled = false;
+  }
 }
 
 // Получение куки
@@ -38,3 +42,5 @@ export function acceptCookies() {
   document.querySelector('.cookie-popup').style.display = 'none';
   enableForm();
 }
+
+enableForm();
