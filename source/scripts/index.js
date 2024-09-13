@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   checkCookie();
 
   // Добавляем событие на кнопку для принятия куки
-  document.querySelector('.cookie-popup__button').addEventListener('click', acceptCookies);
+  document.querySelector('#acceptCookies').addEventListener('click', acceptCookies);
 });
 
 

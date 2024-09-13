@@ -30,6 +30,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}favicons/*.{png,svg}`,
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
+  `${PATH_TO_SOURCE}documents/**/*`,
   `!${PATH_TO_SOURCE}images/icons/**/*`,
   `!${PATH_TO_SOURCE}videos/**/*`,
   `!${PATH_TO_SOURCE}**/README.md`,
@@ -163,6 +164,10 @@ export function startServer() {
       {
         route: '/videos',
         dir: `${PATH_TO_SOURCE}videos`,
+      },
+      {
+        route: '/documents',
+        dir: `${PATH_TO_SOURCE}documents`,
       },
     ],
     cors: true,
