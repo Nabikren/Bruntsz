@@ -1,5 +1,8 @@
 node_modules
 build
+source/documents
+source/videos
+source/vendor
 .idea
 .DS_Store
 raw/**/*.jpg
