@@ -1,5 +1,6 @@
 export const formElements = (() => {
   const form = document.querySelector('form');
+  if (form == null) return;
   return {
     form: form,
     userNameInput: form.querySelector('#username'),
