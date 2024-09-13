@@ -207,4 +207,23 @@
     }
   }
 
+  .policy {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    @media screen and (min-width: $desktop-width) {
+      align-items: start;
+      padding-left: 30px;
+    }
+  }
+
+  .person-data,
+  .cookie {
+    text-decoration: none;
+    color: $white;
+    font-size: 8px;
+  }
 }
