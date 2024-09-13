@@ -1,5 +1,1 @@
-<Files “send_email.php”>
 deny from all
-</Files>
-
-Options -Indexes
