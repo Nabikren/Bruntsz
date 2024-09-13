@@ -60,12 +60,12 @@
             type="font/woff"
             crossorigin="anonymous"
         >
-        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/styles.css?v=1.1">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicons/icon.svg" type="/image/svg+xml">
         <link rel="apple-touch-icon" href="/favicons/180.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <script src="/scripts/index.js" defer></script>
+        <script src="/scripts/index.js?v=1.1" defer></script>
     </head>
     <body class="page__body">
         <header class="header section">
@@ -617,7 +617,11 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                                <div class="policy">
+                                    <a class="person-data" href="/documents/privacy-policy.pdf" download target="_blank">Политикой конфиденциальности</a>
+                                    <a class="cookie" href="/documents/cookie-policy.pdf" download target="_blank">Политикой использования файлов cookie</a>
+                                </div>
+                              </div>
                         </div>
                         <p class="footer__copyright basic-font">© Brunt, Inc. 2024. We will break everything for users!</p>
                     </div>
@@ -625,5 +629,9 @@
             </div>
         </footer>
         <div id="overlay"></div>
+        <div class="cookie-popup" id="cookieConsent">
+            <p>Мы используем файлы cookie для улучшения вашего опыта на сайте. Продолжая использовать наш сайт, вы соглашаетесь с <a class="person-data" href="/documents/privacy-policy.pdf" download target="_blank">Политикой конфиденциальности</a> и <a class="cookie" href="/documents/cookie-policy.pdf" download target="_blank">Политикой использования файлов cookie</a>.</p>
+            <button id="acceptCookies">Принять</button>
+        </div>
     </body>
 </html>
