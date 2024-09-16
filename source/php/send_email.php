@@ -57,7 +57,7 @@ $headers = 'From: order@brunt-sz.ru' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
 // Отправка письма
-if (mail('2172395@gmail.com', 'Регистрация заявки - Brunt', $message, $headers)) {
+if (mail('brunt-sz@mail.ru', 'Регистрация заявки - Brunt', $message, $headers)) {
   echo "<div style='max-width:1024px; margin:0 auto; padding:0 20px; text-align: center;'>
           <p style='color:green;'>Уважаемый(ая) <b style='color:red; font-size:24px'>$username</b>, Ваше письмо отправлено успешно. Спасибо, наш менеджер с Вами свяжется.</p>
         </div>";
